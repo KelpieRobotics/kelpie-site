@@ -1,5 +1,7 @@
 import siteConfig from '@/websiteconfig';
+import Navbar from '@/components/Navbar';
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 
 
 const galleryData = siteConfig.gallery;
@@ -52,10 +54,12 @@ function GalleryViewer({ gallery }) {
       setCurrentImage(index)
     }
   
-    return (
+    return (  
+      <div>
+      <Navbar />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-              <h1 className="text-3xl font-bold mb-4">{`Gallery - ${gallery.name}`}</h1>
+           <Link href='/gallery'> <h1 className="text-3xl font-bold mb-4">{`Gallery - ${gallery.name}`}</h1></Link>
 
         <div className="relative h-96">
           <img src={gallery.images[currentImage]} alt="" layout="fill" objectFit="contain" />
@@ -80,6 +84,7 @@ function GalleryViewer({ gallery }) {
           <p className="text-gray-500">{gallery.dateInfo}</p>
           <p className="mt-4">{gallery.description}</p>
         </div>
+      </div>
       </div>
     )
   }

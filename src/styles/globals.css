@@ -30,6 +30,11 @@ body {
   width: 10rem;
   height: 10rem;
 }
+.logo-small {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 
 .title {
   font-size: 4rem;

@@ -11,8 +11,8 @@ function HomePage() {
       <div className={'links'}>
         {
           siteConfig.navigation.map((nav) => (
-            <a key = {nav.url} href={nav.url} class="font-display max-w-sm leading-tight">
-            <span class="link link-underline"> {nav.title} </span>
+            <a key = {nav.url} href={nav.url} className="font-display max-w-sm leading-tight">
+            <span className="link link-underline"> {nav.title} </span>
         </a>
           ))
 
