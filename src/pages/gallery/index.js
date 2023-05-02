@@ -12,6 +12,7 @@ export default function Home() {
         <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {siteConfig.gallery.map(album => (
             <li key={album.id}>
+              <div className="rounded-lg overflow-hidden shadow-lg bg-white">
               <Link href={`/gallery/${album.id}`}>
                 {/* <a className="block rounded-lg overflow-hidden shadow-lg"> */}
                 <img src={album.coverImage} alt={album.name} className="w-full h-64 object-cover" />
@@ -21,6 +22,7 @@ export default function Home() {
                 </div>
                 {/* </a> */}
               </Link>
+              </div>
             </li>
           ))}
         </ul>

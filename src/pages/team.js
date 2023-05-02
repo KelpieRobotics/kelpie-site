@@ -45,8 +45,10 @@ export default function TeamMembers() {
       <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
         {filteredTeamMembers.map(member => (
           <li key={member.name}>
-            <div className="rounded-lg overflow-hidden shadow-lg">
-              <img src={member.image} alt={member.name} className="w-full aspect-w-4 aspect-h-3 object-cover" />
+            <div className="rounded-lg overflow-hidden shadow-lg bg-white">
+              {/* <img src={member.image} alt={member.name} className="w-full" /> */}
+              <img src={member.image} alt={member.name} style={{width: "100%", height: "auto", aspectRatio: "1/1", objectFit: "cover"}} />
+
               <div className="p-4 bg-white">
                 <h2 className="text-xl mb-2 text-black">{member.name}</h2>
                 <h3 className="text-black">{member.program}</h3>

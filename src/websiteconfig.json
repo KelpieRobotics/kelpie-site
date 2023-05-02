@@ -23,10 +23,6 @@
     {
       "title": "Contact Us",
       "url": "/contact-us"
-    },
-    {
-      "title": "Join Us",
-      "url": "/join-us"
     }
   ],
   "gallery": [
@@ -144,7 +140,7 @@
       "program": "4rd Year - Mechanical Engineering",
       "personalSite": "",
       "linkedin": "",
-      "image": "/assets/members/jason_gonzalez_pulido.png"
+      "image": "/assets/members/jason_gonzalez_pulido.JPG"
     },
     {
       "yearsActive": [
@@ -190,110 +186,110 @@
       "yearsActive": [
         2023
       ],
-      "name": "Adam",
-      "program": "",
+      "name": "Adam Dia",
+      "program": "Computer Engineering",
       "personalSite": "",
       "linkedin": "",
-      "image": ""
+      "image": "/assets/members/adam_dia.JPG"
     },{
       "yearsActive": [
         2023
       ],
-      "name": "Alae",
-      "program": "",
+      "name": "Alae Boufarrachene",
+      "program": "Computer Engineering",
       "personalSite": "",
       "linkedin": "",
-      "image": ""
+      "image": "/assets/members/alae_boufarrachene.jpeg"
     }
     ,{
       "yearsActive": [
         2023
       ],
-      "name": "Sophie",
-      "program": "",
+      "name": "Sophie Tomlin",
+      "program": "Mathematics",
       "personalSite": "",
       "linkedin": "",
-      "image": ""
+      "image": "/assets/members/sophie_tomlin.jpeg"
     }
     ,{
       "yearsActive": [
         2023
       ],
-      "name": "Tahmeed",
-      "program": "",
+      "name": "Tahmeed Khan",
+      "program": "Electrical Engineering",
       "personalSite": "",
       "linkedin": "",
-      "image": ""
+      "image": "/assets/members/tahmeed_khan.JPG"
     }
     ,{
       "yearsActive": [
         2023
       ],
-      "name": "Adamnda",
-      "program": "",
+      "name": "Amanda Doku",
+      "program": "Biomedical Mechanical Engineering",
       "personalSite": "",
       "linkedin": "",
-      "image": ""
+      "image": "/assets/members/amanda_doku.jpeg"
     }
     ,{
       "yearsActive": [
         2023
       ],
-      "name": "Eric",
-      "program": "",
+      "name": "Eric Eaton",
+      "program": "Computer Engineering",
       "personalSite": "",
       "linkedin": "",
-      "image": ""
+      "image": "/assets/members/eric_eaton.jpeg"
     }
     ,{
       "yearsActive": [
         2023
       ],
-      "name": "Ethan G",
-      "program": "",
+      "name": "Ethan Graves",
+      "program": "Electrical Engineering",
       "personalSite": "",
       "linkedin": "",
-      "image": ""
+      "image": "/assets/members/ethan_graves.JPG"
     }
     ,{
       "yearsActive": [
         2023
       ],
-      "name": "Fred",
-      "program": "",
+      "name": "Fred Eloy",
+      "program": "Mechanical Engineering",
       "personalSite": "",
       "linkedin": "",
-      "image": ""
+      "image": "/assets/members/fred_eloy.JPG"
     }
     ,{
       "yearsActive": [
         2023
       ],
-      "name": "Kaitlyn",
-      "program": "",
+      "name": "Kaitlyn Dompaul",
+      "program": "Computer Engineering",
       "personalSite": "",
       "linkedin": "",
-      "image": ""
+      "image": "/assets/members/kaitlyn_dompaul.JPG"
     }
     ,{
       "yearsActive": [
         2023
       ],
-      "name": "Ming",
-      "program": "",
+      "name": "Mingye Chen",
+      "program": "Computer Engineering",
       "personalSite": "",
       "linkedin": "",
-      "image": ""
+      "image": "/assets/members/mingye_chen.JPG"
     }
     ,{
       "yearsActive": [
         2023
       ],
-      "name": "Umer",
-      "program": "",
+      "name": "Umer Qamar",
+      "program": "Software Engineering",
       "personalSite": "",
       "linkedin": "",
-      "image": ""
+      "image": "/assets/members/umer_qamar.JPG"
     }
   
     
