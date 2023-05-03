@@ -25,7 +25,7 @@ const Contact = () => {
 
                 <TemplatePage title="Contact Us">
 
-
+                    <p>If you have any questions for the team, or just want to keep tabs on our progress, there are a variety of ways to contact us.</p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <form onSubmit={handleSubmit}>
                             <div className="mb-6">

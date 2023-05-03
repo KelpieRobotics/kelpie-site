@@ -1,5 +1,6 @@
 import siteConfig from '@/websiteconfig';
 import Link from 'next/link'
+import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import TemplatePage from "@/reusable/TemplatePage";
 
@@ -17,7 +18,7 @@ export default function Home() {
                   <div className="rounded-lg overflow-hidden shadow-lg bg-white">
                     <Link href={`/gallery/${album.id}`}>
                       {/* <a className="block rounded-lg overflow-hidden shadow-lg"> */}
-                      <img src={album.coverImage} alt={album.name} className="w-full h-64 object-cover" />
+                      <Image src={album.coverImage} alt={album.name} className="w-full h-64 object-cover" />
                       <div className="p-4 bg-white">
                         <h2 className="text-xl mb-2 text-black">{album.name}</h2>
                         <h3 className="text-black">{album.dateInfo}</h3>

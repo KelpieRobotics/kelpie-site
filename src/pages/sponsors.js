@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import TemplatePage from "@/reusable/TemplatePage";
+import Image from "next/image";
 
 export default function Competition() {
 
@@ -11,7 +12,7 @@ export default function Competition() {
 
                     We believe that your support is more than just financial; it is a partnership that enables us to create a collaborative and dynamic environment for our team members to learn, grow and thrive. Your organization becomes a part of our team, and we are committed to showcasing our partnership through frequent features on our social media platforms and by displaying your logo on our ROV during the competition. We are excited to work together to achieve our goals and to make a positive impact on the future of underwater exploration and research.</h2>
 
-                    <img src="/assets/branding/sponsors2022.png" style={{maxWidth: "750px"}} />
+                    <Image src="/assets/branding/sponsors2022.png" style={{maxWidth: "750px"}} alt=""/>
 
             </TemplatePage>
         </div>
