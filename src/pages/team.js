@@ -1,6 +1,8 @@
 import siteConfig from '@/websiteconfig';
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
+import TemplatePage from "@/reusable/TemplatePage";
+
 
 export default function TeamMembers() {
   const teamMembers = siteConfig.teamMembers;
@@ -29,30 +31,31 @@ export default function TeamMembers() {
   return (
     <div>
       <Navbar />
-      <h1 className="text-3xl font-bold mb-4">Team Members</h1>
-      <div>
-        <label htmlFor="yearSelect" className="mr-2 black-text">
-          Select year:
-        </label>
-        <select id="yearSelect" value={selectedYear} onChange={handleYearChange}>
-          {years.map(year => (
-            <option key={year} value={year}>
-              {year}
-            </option>
-          ))}
-        </select>
-      </div>
-      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-        {filteredTeamMembers.map(member => (
-          <li key={member.name}>
-            <div className="rounded-lg overflow-hidden shadow-lg bg-white">
-              {/* <img src={member.image} alt={member.name} className="w-full" /> */}
-              <img src={member.image} alt={member.name} style={{width: "100%", height: "auto", aspectRatio: "1/1", objectFit: "cover"}} />
+      <TemplatePage title="Team Members">
+        <div>
+          <div>
+            <label htmlFor="yearSelect" className="mr-2 black-text">
+              Select year:
+            </label>
+            <select id="yearSelect" value={selectedYear} onChange={handleYearChange}>
+              {years.map(year => (
+                <option key={year} value={year}>
+                  {year}
+                </option>
+              ))}
+            </select>
+          </div>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {filteredTeamMembers.map(member => (
+              <li key={member.name}>
+                <div className="rounded-lg overflow-hidden shadow-lg bg-white">
+                  {/* <img src={member.image} alt={member.name} className="w-full" /> */}
+                  <img src={member.image} alt={member.name} style={{ width: "100%", height: "auto", aspectRatio: "1/1", objectFit: "cover" }} />
 
-              <div className="p-4 bg-white">
-                <h2 className="text-xl mb-2 text-black">{member.name}</h2>
-                <h3 className="text-black">{member.program}</h3>
-                {/* <div>
+                  <div className="p-4 bg-white">
+                    <h2 className="text-xl mb-2 text-black">{member.name}</h2>
+                    <h3 className="text-black">{member.program}</h3>
+                    {/* <div>
                   {member.personalSite && (
                     <a href={member.personalSite} className="text-blue-500 mr-2" target="_blank" rel="noopener noreferrer">
                       Personal Website
@@ -64,11 +67,13 @@ export default function TeamMembers() {
                     </a>
                   )}
                 </div> */}
-              </div>
-            </div>
-          </li>
-        ))}
-      </ul>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </ TemplatePage >
     </div>
   );
 }

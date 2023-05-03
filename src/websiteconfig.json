@@ -1,10 +1,6 @@
 {
   "navigation": [
     {
-      "title": "Team",
-      "url": "/team"
-    },
-    {
       "title": "Competition",
       "url": "/competition"
     },
