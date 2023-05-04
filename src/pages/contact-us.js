@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { FaFacebook, FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaTwitch } from 'react-icons/fa';
 import TemplatePage from "@/reusable/TemplatePage";
 import Navbar from '@/components/Navbar';
-
+import Link from 'next/link';
 
 const Contact = () => {
     const [name, setName] = useState('');
@@ -90,24 +90,24 @@ const Contact = () => {
                         <div>
                             <h2 className="text-xl font-bold mb-4">Find us on social media</h2>
                             <div className="flex flex-row gap-4">
-                                <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <Link href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
                                     <FaLinkedin className="text-4xl text-blue-700 hover:text-blue-900 transition-colors" />
-                                </a>
-                                <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+                                </Link>
+                                <Link href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
                                     <FaFacebook className="text-4xl text-blue-700 hover:text-blue-900 transition-colors" />
-                                </a>
-                                <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+                                </Link>
+                                <Link href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
                                     <FaTwitter className="text-4xl text-blue-700 hover:text-blue-900 transition-colors" />
-                                </a>
-                                <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+                                </Link>
+                                <Link href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
                                     <FaInstagram className="text-4xl text-pink-500 hover:text-pink-700 transition-colors" />
-                                </a>
-                                <a href="https://www.twitch.tv" target="_blank" rel="noopener" aria-label="Twitch">
+                                </Link>
+                                <Link href="https://www.twitch.tv" target="_blank" rel="noopener" aria-label="Twitch">
                                     <FaTwitch className="text-4xl text-purple-500 hover:text-purple-700 transition-colors" />
-                                </a>
-                                <a href="https://www.github.com" target="_blank" rel="noopener" aria-label="GitHub">
+                                </Link>
+                                <Link href="https://www.github.com" target="_blank" rel="noopener" aria-label="GitHub">
                                     <FaGithub className="text-4xl text-gray-700 hover:text-gray-900 transition-colors" />
-                                </a>
+                                </Link>
                             </div>
                             <h2 className="text-xl font-bold mt-8 mb-4">Our Location</h2>
                             <div className="h-64">

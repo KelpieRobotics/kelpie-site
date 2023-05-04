@@ -2,7 +2,7 @@ import siteConfig from '@/websiteconfig';
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import TemplatePage from "@/reusable/TemplatePage";
-
+import Image from 'next/image';
 
 export default function TeamMembers() {
   const teamMembers = siteConfig.teamMembers;
@@ -49,8 +49,7 @@ export default function TeamMembers() {
             {filteredTeamMembers.map(member => (
               <li key={member.name}>
                 <div className="rounded-lg overflow-hidden shadow-lg bg-white">
-                  {/* <img src={member.image} alt={member.name} className="w-full" /> */}
-                  <img src={member.image} alt={member.name} style={{ width: "100%", height: "auto", aspectRatio: "1/1", objectFit: "cover" }} />
+                  <Image src={member.image} alt={member.name} style={{ width: "100%", height: "auto", aspectRatio: "1/1", objectFit: "cover" }} />
 
                   <div className="p-4 bg-white">
                     <h2 className="text-xl mb-2 text-black">{member.name}</h2>
