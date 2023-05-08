@@ -6,7 +6,7 @@ import Link from 'next/link'
 function HomePage() {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <Image src="/assets/branding/logo-small.svg" className={`logo`} alt="Logo" />
+      <Image src="/assets/branding/logo-small.svg" className={`logo`} alt="Logo" width="100" height="100"/>
       <h1 className={'title'}>Kelpie Robotics</h1>
       <h2 className={'subtitle'}>We&apos;re diving deeper</h2>
       <div className={'links'}>

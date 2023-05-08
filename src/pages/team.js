@@ -49,7 +49,7 @@ export default function TeamMembers() {
             {filteredTeamMembers.map(member => (
               <li key={member.name}>
                 <div className="rounded-lg overflow-hidden shadow-lg bg-white">
-                  <Image src={member.image} alt={member.name} style={{ width: "100%", height: "auto", aspectRatio: "1/1", objectFit: "cover" }} />
+                  <Image src={member.image} alt={member.name} width="100" height="100" style={{ width: "100%", height: "auto", aspectRatio: "1/1", objectFit: "cover" }} />
 
                   <div className="p-4 bg-white">
                     <h2 className="text-xl mb-2 text-black">{member.name}</h2>

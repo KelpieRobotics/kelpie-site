@@ -7,7 +7,7 @@ function Navbar() {
     <header className="flex items-center justify-between px-4 py-2 bg-gray-900 text-white">
       <Link href='/' >
       <div className="flex items-center space-x-2">
-        <Image src="/assets/branding/logo-small.svg" className={'logo-small'} alt="Logo" />
+        <Image src="/assets/branding/logo-small.svg" className={'logo-small'} alt="Logo" width="100" height="100"/>
         <h1 className="text-xl font-bold">Kelpie Robotics</h1>
         <h2 className="text-sm font-light">We&apos;re diving deeper</h2>
       </div>
