@@ -2,8 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    disableStaticImages: true,
-  },
+		domains: ["refresh.kelpie-site.pages.dev", "kelpie-site.pages.dev", "kelpierobotics.com"],
+	},
 }
 
 module.exports = nextConfig
