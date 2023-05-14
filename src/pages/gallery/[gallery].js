@@ -2,7 +2,6 @@ import siteConfig from '@/websiteconfig';
 import Navbar from '@/components/Navbar';
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import Image from 'next/image';
 import TemplatePage from "@/reusable/TemplatePage";
 
 
@@ -65,7 +64,7 @@ function GalleryViewer({ gallery }) {
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="relative h-100" style={{ overflow: 'hidden' }}>
-              <Image src={gallery.images[currentImage]} alt="" layout="fill" objectFit="contain" width="100" height="100"/>
+              <img src={gallery.images[currentImage]} alt="" layout="fill" objectFit="contain" width="100" height="100"/>
               <button className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md" onClick={prevImage}>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />

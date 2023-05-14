@@ -12,7 +12,7 @@ export default function Competition() {
 
                     We believe that your support is more than just financial; it is a partnership that enables us to create a collaborative and dynamic environment for our team members to learn, grow and thrive. Your organization becomes a part of our team, and we are committed to showcasing our partnership through frequent features on our social media platforms and by displaying your logo on our ROV during the competition. We are excited to work together to achieve our goals and to make a positive impact on the future of underwater exploration and research.</h2>
 
-                    <Image src="/assets/branding/sponsors2022.png" style={{maxWidth: "750px"}} width="100" height="100" alt=""/>
+                    <img src="/assets/branding/sponsors2022.png" style={{maxWidth: "750px"}} width="100" height="100" alt=""/>
 
             </TemplatePage>
         </div>
