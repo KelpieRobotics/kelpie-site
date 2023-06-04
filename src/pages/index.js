@@ -5,15 +5,15 @@ import Link from 'next/link'
 
 function HomePage() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className="flex flex-col items-center justify-center h-screen homepage">
       <img src="/assets/branding/logo-small.svg" className={`logo`} alt="Logo" width="100" height="100"/>
-      <h1 className={'title'}>Kelpie Robotics</h1>
-      <h2 className={'subtitle'}>We&apos;re diving deeper</h2>
+      <h1 className={'title text-white'}>Kelpie Robotics</h1>
+      <h2 className={'subtitle text-white'}>We&apos;re diving deeper</h2>
       <div className={'links'}>
         {
           siteConfig.navigation.map((nav) => (
             <Link key = {nav.url} href={nav.url} className="font-display max-w-sm leading-tight">
-            <span className="link link-underline"> {nav.title} </span>
+            <span className="link link-underline text-white"> {nav.title} </span>
         </Link>
           ))
 
