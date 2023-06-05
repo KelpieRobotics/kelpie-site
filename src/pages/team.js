@@ -44,6 +44,9 @@ export default function TeamMembers() {
                 </option>
               ))}
             </select>
+            <br />
+            <br />
+
           </div>
           <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {filteredTeamMembers.map(member => (

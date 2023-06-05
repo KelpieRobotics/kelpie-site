@@ -21,6 +21,66 @@
       "url": "/contact-us"
     }
   ],
+  "sponsors": [
+    {
+      "yearsActive": [
+        2022
+      ],
+      "name": "Lockheed Martin",
+      "website": "https://www.lockheedmartin.com",
+      "logo": "/assets/sponsors/lockheedmartin.svg"
+    },
+    {
+      "yearsActive": [
+        2022,
+        2023
+      ],
+      "name": "RBR",
+      "website": "https://rbr-global.com",
+      "logo": "/assets/sponsors/RBR-logo.png"
+    },
+    {
+      "yearsActive": [
+        2023
+      ],
+      "name": "Ciena",
+      "website": "https://ciena.com",
+      "logo": "/assets/sponsors/ciena-logo.svg"
+    },
+    {
+      "yearsActive": [
+        2023
+      ],
+      "name": "Larus",
+      "website": "https://larus.com",
+      "logo": "/assets/sponsors/LARUS_logo_v6.png"
+    },
+    {
+      "yearsActive": [
+        2023
+      ],
+      "name": "Solidworks",
+      "website": "https://www.solidworks.com",
+      "logo": "/assets/sponsors/SOLIDWORKS_Logotype_White.svg"
+    },
+    {
+      "yearsActive": [
+        2023
+      ],
+      "name": "Lonehaven",
+      "website": "https://lonehaven.com/",
+      "logo": "/assets/sponsors/Lonehaven.svg"
+    },
+    {
+      "yearsActive": [
+        2023
+      ],
+      "name": "IEEE",
+      "website": "https://ieee.org",
+      "logo": "/assets/sponsors/ieee-logo.gif"
+    }
+
+  ],
   "gallery": [
     {
       "id": "2022-pool-test-1",
@@ -148,7 +208,8 @@
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/mihir_kishore_jakhi.webp"
-    },{
+    },
+    {
       "yearsActive": [
         2022,
         2023
@@ -158,7 +219,8 @@
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/mohamad_ali_jarkas.webp"
-    },{
+    },
+    {
       "yearsActive": [
         2022,
         2023
@@ -168,7 +230,8 @@
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/rikki_romana.webp"
-    },{
+    },
+    {
       "yearsActive": [
         2022,
         2023
@@ -178,7 +241,8 @@
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/sebastian_larrivee.webp"
-    },{
+    },
+    {
       "yearsActive": [
         2023
       ],
@@ -187,7 +251,8 @@
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/adam_dia.webp"
-    },{
+    },
+    {
       "yearsActive": [
         2023
       ],
@@ -196,8 +261,8 @@
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/alae_boufarrachene.webp"
-    }
-    ,{
+    },
+    {
       "yearsActive": [
         2023
       ],
@@ -206,8 +271,8 @@
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/sophie_tomlin.webp"
-    }
-    ,{
+    },
+    {
       "yearsActive": [
         2023
       ],
@@ -216,8 +281,8 @@
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/tahmeed_khan.webp"
-    }
-    ,{
+    },
+    {
       "yearsActive": [
         2023
       ],
@@ -226,8 +291,8 @@
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/amanda_doku.webp"
-    }
-    ,{
+    },
+    {
       "yearsActive": [
         2023
       ],
@@ -236,8 +301,8 @@
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/eric_eaton.webp"
-    }
-    ,{
+    },
+    {
       "yearsActive": [
         2023
       ],
@@ -246,8 +311,8 @@
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/ethan_graves.webp"
-    }
-    ,{
+    },
+    {
       "yearsActive": [
         2023
       ],
@@ -256,8 +321,8 @@
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/fred_eloy.webp"
-    }
-    ,{
+    },
+    {
       "yearsActive": [
         2023
       ],
@@ -266,8 +331,8 @@
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/kaitlyn_dompaul.webp"
-    }
-    ,{
+    },
+    {
       "yearsActive": [
         2023
       ],
@@ -276,8 +341,8 @@
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/mingye_chen.webp"
-    }
-    ,{
+    },
+    {
       "yearsActive": [
         2023
       ],
@@ -287,7 +352,5 @@
       "linkedin": "",
       "image": "/assets/members/umer_qamar.webp"
     }
-  
-    
   ]
 }
