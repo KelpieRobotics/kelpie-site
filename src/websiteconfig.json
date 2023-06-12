@@ -1,0 +1,356 @@
+{
+  "navigation": [
+    {
+      "title": "Competition",
+      "url": "/competition"
+    },
+    {
+      "title": "Team",
+      "url": "/team"
+    },
+    {
+      "title": "Sponsors",
+      "url": "/sponsors"
+    },
+    {
+      "title": "Gallery",
+      "url": "/gallery"
+    },
+    {
+      "title": "Contact Us",
+      "url": "/contact-us"
+    }
+  ],
+  "sponsors": [
+    {
+      "yearsActive": [
+        2022
+      ],
+      "name": "Lockheed Martin",
+      "website": "https://www.lockheedmartin.com",
+      "logo": "/assets/sponsors/lockheedmartin.svg"
+    },
+    {
+      "yearsActive": [
+        2022,
+        2023
+      ],
+      "name": "RBR",
+      "website": "https://rbr-global.com",
+      "logo": "/assets/sponsors/RBR-logo.png"
+    },
+    {
+      "yearsActive": [
+        2023
+      ],
+      "name": "Ciena",
+      "website": "https://ciena.com",
+      "logo": "/assets/sponsors/ciena-logo.svg"
+    },
+    {
+      "yearsActive": [
+        2023
+      ],
+      "name": "Larus",
+      "website": "https://larus.com",
+      "logo": "/assets/sponsors/LARUS_logo_v6.png"
+    },
+    {
+      "yearsActive": [
+        2023
+      ],
+      "name": "Solidworks",
+      "website": "https://www.solidworks.com",
+      "logo": "/assets/sponsors/SOLIDWORKS_Logotype_White.svg"
+    },
+    {
+      "yearsActive": [
+        2023
+      ],
+      "name": "Lonehaven",
+      "website": "https://lonehaven.com/",
+      "logo": "/assets/sponsors/Lonehaven.svg"
+    },
+    {
+      "yearsActive": [
+        2023
+      ],
+      "name": "IEEE",
+      "website": "https://ieee.org",
+      "logo": "/assets/sponsors/ieee-logo.gif"
+    }
+
+  ],
+  "gallery": [
+    {
+      "id": "2022-pool-test-1",
+      "name": "2022 First Pool Test",
+      "description": "",
+      "dateInfo": "May 14, 2022",
+      "coverImage": "/assets/gallery/2022-pool-test-1/1.jpg",
+      "images": [
+        "/assets/gallery/2022-pool-test-1/1.jpg",
+        "/assets/gallery/2022-pool-test-1/2.jpg",
+        "/assets/gallery/2022-pool-test-1/3.jpg",
+        "/assets/gallery/2022-pool-test-1/4.jpg",
+        "/assets/gallery/2022-pool-test-1/5.jpg",
+        "/assets/gallery/2022-pool-test-1/6.jpg",
+        "/assets/gallery/2022-pool-test-1/7.jpg",
+        "/assets/gallery/2022-pool-test-1/8.jpg",
+        "/assets/gallery/2022-pool-test-1/9.jpg"
+      ]
+    },
+    {
+      "id": "2022-calibration-run",
+      "name": "2022 Calibration Run",
+      "description": "",
+      "dateInfo": "May 10, 2022",
+      "coverImage": "/assets/gallery/2022-calibration-run/1.jpg",
+      "images": [
+        "/assets/gallery/2022-calibration-run/1.jpg",
+        "/assets/gallery/2022-calibration-run/2.jpg",
+        "/assets/gallery/2022-calibration-run/3.jpg",
+        "/assets/gallery/2022-calibration-run/4.jpg",
+        "/assets/gallery/2022-calibration-run/5.jpg",
+        "/assets/gallery/2022-calibration-run/6.jpg",
+        "/assets/gallery/2022-calibration-run/7.jpg"
+      ]
+    },
+    {
+      "id": "2022-california-trip",
+      "name": "2022 - California Trip",
+      "description": "",
+      "dateInfo": "June 2022",
+      "coverImage": "/assets/gallery/2022-california-trip/1.JPG",
+      "images": [
+        "/assets/gallery/2022-california-trip/1.JPG",
+        "/assets/gallery/2022-california-trip/2.JPG",
+        "/assets/gallery/2022-california-trip/3.JPG",
+        "/assets/gallery/2022-california-trip/4.JPG",
+        "/assets/gallery/2022-california-trip/5.JPG",
+        "/assets/gallery/2022-california-trip/6.JPG",
+        "/assets/gallery/2022-california-trip/7.JPG",
+        "/assets/gallery/2022-california-trip/8.JPG",
+        "/assets/gallery/2022-california-trip/9.JPG",
+        "/assets/gallery/2022-california-trip/10.JPG",
+        "/assets/gallery/2022-california-trip/11.JPG",
+        "/assets/gallery/2022-california-trip/12.JPG",
+        "/assets/gallery/2022-california-trip/13.JPG",
+        "/assets/gallery/2022-california-trip/14.JPG",
+        "/assets/gallery/2022-california-trip/15.JPG",
+        "/assets/gallery/2022-california-trip/16.JPG",
+        "/assets/gallery/2022-california-trip/17.JPG"
+      ]
+    }
+  ],
+  "teamMembers": [
+    {
+      "yearsActive": [
+        2022,
+        2023
+      ],
+      "name": "Juan Hiedra Primera",
+      "program": "4rd Year - Electrical Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/juan_hiedra_primera.jpg"
+    },
+    {
+      "yearsActive": [
+        2022
+      ],
+      "name": "James Wang",
+      "program": "3rd Year - Biotechnology",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/james_wang.webp"
+    },
+    {
+      "yearsActive": [
+        2022,
+        2023
+      ],
+      "name": "Stefan Todorovic",
+      "program": "4rd Year - Computer Engineering",
+      "personalSite": "https://stefantodorovic.com",
+      "linkedin": "https://www.linkedin.com/in/todorovicstefan/",
+      "image": "/assets/members/stefan_todorovic.webp"
+    },
+    {
+      "yearsActive": [
+        2022,
+        2023
+      ],
+      "name": "Ethan Bowering",
+      "program": "4rd Year - Electrical Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/ethan_bowering.webp"
+    },
+    {
+      "yearsActive": [
+        2022,
+        2023
+      ],
+      "name": "Jason Gonzalez Pulido",
+      "program": "4rd Year - Mechanical Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/jason_gonzalez_pulido.webp"
+    },
+    {
+      "yearsActive": [
+        2022,
+        2023
+      ],
+      "name": "Mihir Kishore Jakhi",
+      "program": "4rd Year - Electrical Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/mihir_kishore_jakhi.webp"
+    },
+    {
+      "yearsActive": [
+        2022,
+        2023
+      ],
+      "name": "Mohamad Ali Jarkas",
+      "program": "4rd Year - Electrical Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/mohamad_ali_jarkas.webp"
+    },
+    {
+      "yearsActive": [
+        2022,
+        2023
+      ],
+      "name": "Rikki Romana",
+      "program": "4rd Year - Electrical Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/rikki_romana.webp"
+    },
+    {
+      "yearsActive": [
+        2022,
+        2023
+      ],
+      "name": "Sebastian Larrivée",
+      "program": "4rd Year - Computer Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/sebastian_larrivee.webp"
+    },
+    {
+      "yearsActive": [
+        2023
+      ],
+      "name": "Adam Dia",
+      "program": "Computer Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/adam_dia.webp"
+    },
+    {
+      "yearsActive": [
+        2023
+      ],
+      "name": "Alae Boufarrachene",
+      "program": "Computer Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/alae_boufarrachene.webp"
+    },
+    {
+      "yearsActive": [
+        2023
+      ],
+      "name": "Sophie Tomlin",
+      "program": "Mathematics",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/sophie_tomlin.webp"
+    },
+    {
+      "yearsActive": [
+        2023
+      ],
+      "name": "Tahmeed Khan",
+      "program": "Electrical Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/tahmeed_khan.webp"
+    },
+    {
+      "yearsActive": [
+        2023
+      ],
+      "name": "Amanda Doku",
+      "program": "Biomedical Mechanical Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/amanda_doku.webp"
+    },
+    {
+      "yearsActive": [
+        2023
+      ],
+      "name": "Eric Eaton",
+      "program": "Computer Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/eric_eaton.webp"
+    },
+    {
+      "yearsActive": [
+        2023
+      ],
+      "name": "Ethan Graves",
+      "program": "Electrical Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/ethan_graves.webp"
+    },
+    {
+      "yearsActive": [
+        2023
+      ],
+      "name": "Fred Eloy",
+      "program": "Mechanical Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/fred_eloy.webp"
+    },
+    {
+      "yearsActive": [
+        2023
+      ],
+      "name": "Kaitlyn Dompaul",
+      "program": "Computer Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/kaitlyn_dompaul.webp"
+    },
+    {
+      "yearsActive": [
+        2023
+      ],
+      "name": "Mingye Chen",
+      "program": "Computer Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/mingye_chen.webp"
+    },
+    {
+      "yearsActive": [
+        2023
+      ],
+      "name": "Umer Qamar",
+      "program": "Software Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/umer_qamar.webp"
+    }
+  ]
+}
