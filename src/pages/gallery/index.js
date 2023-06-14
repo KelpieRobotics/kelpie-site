@@ -1,12 +1,15 @@
 import siteConfig from '@/websiteconfig';
 import Link from 'next/link'
-import Image from 'next/image';
+import Head from 'next/head';
 import Navbar from '@/components/Navbar';
 import TemplatePage from "@/reusable/TemplatePage";
 
 export default function Home() {
   return (
     <div>
+       <Head>
+        <title>Gallery | Kelpie Robotics</title>
+      </Head>
       <Navbar />
       <div>
         <TemplatePage title="Gallery">

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import TemplatePage from '@/reusable/TemplatePage';
 import siteConfig from '@/websiteconfig';
-
+import Head from 'next/head';
 const NotFound = () => {
     const router = useRouter();
   
@@ -18,6 +18,9 @@ const NotFound = () => {
   
     return (
       <div>
+          <Head>
+        <title>404 | Kelpie Robotics</title>
+      </Head>
         <Navbar />
           <div className="flex flex-col items-center justify-center h-screen">
             <h1 className="text-6xl font-bold mb-4 text-white">Oops!</h1>

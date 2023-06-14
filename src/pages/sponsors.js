@@ -2,7 +2,7 @@ import siteConfig from '@/websiteconfig';
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import TemplatePage from "@/reusable/TemplatePage";
-
+import Head from 'next/head';
 export default function Competition() {
     const sponsors = siteConfig.sponsors;
     const years = sponsors.reduce((years, sponsor) => {
@@ -29,6 +29,9 @@ export default function Competition() {
 
     return (
         <div>
+           <Head>
+                <title>Sponsors | Kelpie Robotics</title>
+            </Head>
             <Navbar />
             <TemplatePage title="Sponsors">
                 <h2>Kelpie Robotics is a student-led team that relies on the support of our sponsors to participate in the MATE ROV competition. We are grateful for the contributions of our sponsors, who play a crucial role in helping us develop our skills and achieve our goals in the field of underwater robotics. Through your support, you are not only investing in the future of the Canadian technology industry, but also in the development of innovative solutions for underwater exploration and research.
@@ -47,23 +50,28 @@ export default function Competition() {
 
             <div className="flex flex-col items-center justify-center bg-[url] bg-cover bg-center">
 
-  <div className="flex justify-center">
-    <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-      {filteredSponsors.map((sponsor) => (
-        <li key={sponsor.name}>
-          <div className="rounded-lg overflow-hidden shadow-lg backdrop-blur-sm backdrop-brightness-75 flex flex-col items-center justify-center h-64 p-4">
-            <a href={sponsor.website} target="_blank" rel="noopener noreferrer">
-              <div className="flex items-center justify-center mb-2 h-40">
-                <img src={sponsor.logo} alt={sponsor.name} className="h-full max-w-full" />
-              </div>
-              <h2 className="text-xl mb-2 text-white">{sponsor.name}</h2>
-            </a>
-          </div>
-        </li>
-      ))}
-    </ul>
-  
-  </div>
+            <div className="flex justify-center">
+  <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+    {filteredSponsors.map((sponsor) => (
+      <li key={sponsor.name}>
+        <div className="rounded-lg overflow-hidden shadow-lg backdrop-blur-sm backdrop-brightness-75 flex flex-col items-center justify-center h-64 p-4">
+          <a href={sponsor.website} target="_blank" rel="noopener noreferrer">
+            <div className="flex items-center justify-center mb-2 h-40">
+              <img
+                src={sponsor.logo}
+                alt={sponsor.name}
+                className="h-auto max-w-full max-h-full"
+                style={{ maxHeight: "100%", maxWidth: "100%" }}
+              />
+            </div>
+            <h2 className="text-xl mb-2 text-white">{sponsor.name}</h2>
+          </a>
+        </div>
+      </li>
+    ))}
+  </ul>
+</div>
+
   <div className="text-white">
   <br />
     <br />

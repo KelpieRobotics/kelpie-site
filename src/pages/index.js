@@ -2,9 +2,13 @@ import React from 'react';
 import siteConfig from '@/websiteconfig';
 import Image from 'next/image';
 import Link from 'next/link'
-
+import Head from 'next/head';
 function HomePage() {
   return (
+ <>
+ <Head>
+                <title>Home | Kelpie Robotics</title>
+            </Head>
     <div className="flex flex-col items-center justify-center h-screen homepage">
       <img src="/assets/branding/logo-small.svg" className={`logo`} alt="Logo" width="100" height="100"/>
       <h1 className={'title text-white'}>Kelpie Robotics</h1>
@@ -20,6 +24,7 @@ function HomePage() {
         }
       </div>
     </div>
+    </>
   );
 };
 

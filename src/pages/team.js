@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import TemplatePage from "@/reusable/TemplatePage";
 import Image from 'next/image';
-
+import Head from 'next/head';
 export default function TeamMembers() {
   const teamMembers = siteConfig.teamMembers;
   const years = teamMembers.reduce((years, member) => {
@@ -30,6 +30,9 @@ export default function TeamMembers() {
 
   return (
     <div>
+       <Head>
+                <title>Team | Kelpie Robotics</title>
+            </Head>
       <Navbar />
       <TemplatePage title="Team Members">
         <div>

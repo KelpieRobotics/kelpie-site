@@ -3,7 +3,6 @@ import { FaFacebook, FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaTwitch } fr
 import TemplatePage from "@/reusable/TemplatePage";
 import Navbar from '@/components/Navbar';
 import Link from 'next/link';
-
 const Contact = () => {
     const handleSendEmail = () => {
         // Your logic for sending the email goes here
@@ -12,6 +11,9 @@ const Contact = () => {
 
     return (
         <div>
+            <Head>
+                <title>Contact Us | Kelpie Robotics</title>
+            </Head>
             <Navbar />
 
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,8 +32,8 @@ const Contact = () => {
                                     </Link>
                                     <Link href="https://www.facebook.com/profile.php?id=100075181450829" target="_blank" rel="noopener" aria-label="Facebook">
                                         <FaFacebook className="text-4xl text-blue-700 hover:text-blue-900 transition-colors" />
-                                    </Link> 
-                                     <Link href="https://twitter.com/kelpie_robotics" target="_blank" rel="noopener" aria-label="Twitter">
+                                    </Link>
+                                    <Link href="https://twitter.com/kelpie_robotics" target="_blank" rel="noopener" aria-label="Twitter">
                                         <FaTwitter className="text-4xl text-blue-700 hover:text-blue-900 transition-colors" />
                                     </Link>
                                     <Link href="https://www.instagram.com/kelpie_robotics/" target="_blank" rel="noopener" aria-label="Instagram">
@@ -50,7 +52,7 @@ const Contact = () => {
                                     <p>Address:<br />150 Louis-Pasteur Private <br /> Ottawa, ON, K1N 9A7</p>
                                     <button
                                         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
-                                        onClick={()=> {window.open("mailto:kelpierobotics@gmail.com")}}
+                                        onClick={() => { window.open("mailto:kelpierobotics@gmail.com") }}
                                     >
                                         Send Email
                                     </button>
