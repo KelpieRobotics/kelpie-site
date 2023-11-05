@@ -58,13 +58,13 @@ body {
 
 
 .title {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: bold;
   margin-top: 2rem;
 }
 
 .subtitle {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: medium;
   margin-top: 1rem;
 }
@@ -74,6 +74,7 @@ body {
   justify-content: center;
   margin-top: 2rem;
   gap: 1rem;
+  font-size: 1.2rem;
 }
 
 .links a {
@@ -84,7 +85,11 @@ body {
   color: #2d3748;
 } */
 
-
+.link-underline.active-link {
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#00A99D, #00A99D);
+  background-size: 0 3px, 100% 3px;
+  background-position: 0 100%, 0 100%;
+}
 
 
 .link-underline {
@@ -99,8 +104,8 @@ body {
 }
 
 .link-underline:hover {
-  background-size: 100% 3px;
-  background-position: 0 100%
+  background-size: 100% 4px;
+  background-position: 0 100%;
 }
 
 @media (max-width: 640px) {

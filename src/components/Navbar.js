@@ -1,17 +1,27 @@
-import { useState } from 'react';
+import { useState, useEffect  } from 'react';
 import siteConfig from '@/websiteconfig';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const [activeSection, setActiveSection] = useState(''); 
+  const router = useRouter();
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
+  useEffect(() => { //Set active section (match URL)
+    const currentUrl = router.asPath;
+    const activeNav = siteConfig.navigation.find((nav) => nav.url === currentUrl);
+    if (activeNav) {
+      setActiveSection(activeNav.title);
+    }
+  }, [router.asPath]);
+  
   return (
-    <header className="flex items-center justify-between px-4 py-2 bg-gray-900 text-white" style={{position: 'sticky', top: 0}}>
+    <header className="flex items-center justify-between px-4 py-2 bg-gray-900 text-white" style={{ position: 'sticky', top: 0 }}>
       <Link href="/">
         <div className="flex items-center space-x-2">
           <Image
@@ -28,8 +38,15 @@ function Navbar() {
       <nav className="hidden md:block space-x-4">
         <div className="links">
           {siteConfig.navigation.map((nav) => (
-            <Link key={nav.url} href={nav.url} className="font-display max-w-sm leading-tight">
-              <span className="link link-underline text-white">{nav.title}</span>
+            <Link legacyBehavior key={nav.url} href={nav.url}>
+              <span
+                className={`font-display max-w-sm leading-tight link-underline text-white ${
+                  activeSection === nav.title ? 'active-link' : ''
+                }`}
+                onClick={() => setActiveSection(nav.title)}
+              >
+                {nav.title}
+              </span>
             </Link>
           ))}
         </div>
@@ -53,10 +70,7 @@ function Navbar() {
         {menuOpen && (
           <div className="fixed top-0 left-0 right-0 bottom-0 bg-gray-900 text-white z-50">
             <div className="flex flex-col p-4 space-y-4">
-              <button
-                onClick={toggleMenu}
-                className="absolute top-0 right-0 p-3"
-              >
+              <button onClick={toggleMenu} className="absolute top-0 right-0 p-3">
                 <svg
                   className="w-4 h-4 fill-current"
                   viewBox="0 0 20 20"
@@ -82,9 +96,16 @@ function Navbar() {
                 </div>
               </div>
               {siteConfig.navigation.map((nav) => (
-                <Link key={nav.url} href={nav.url} className="font-display max-w-sm leading-tight">
-                  <span className="link link-underline text-white">{nav.title}</span>
-                </Link>
+                <Link legacyBehavior key={nav.url} href={nav.url}>
+                <span
+                  className={`font-display max-w-sm leading-tight link-underline text-white ${
+                    activeSection === nav.title ? 'active-link' : ''
+                  }`}
+                  onClick={() => setActiveSection(nav.title)}
+                >
+                  {nav.title}
+                </span>
+              </Link>
               ))}
             </div>
           </div>

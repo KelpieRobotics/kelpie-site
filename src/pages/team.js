@@ -36,13 +36,14 @@ export default function TeamMembers() {
       <Navbar />
       <TemplatePage title="Team Members">
         <div>
+          
           <div>
             <label htmlFor="yearSelect" className="mr-2 black-text">
               Select year:
             </label>
-            <select id="yearSelect" value={selectedYear} onChange={handleYearChange}>
+            <select id="yearSelect" value={selectedYear} onChange={handleYearChange} >
               {years.map(year => (
-                <option key={year} value={year}>
+                <option key={year} value={year}  >
                   {year}
                 </option>
               ))}
@@ -51,15 +52,21 @@ export default function TeamMembers() {
             <br />
 
           </div>
+          
           <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {filteredTeamMembers.map(member => (
-              <li key={member.name}>
-                <div className="rounded-lg overflow-hidden shadow-lg bg-white">
+              <li key={member.name }  className="flex flex-col">
+                <div className="rounded-lg overflow-hidden shadow-lg bg-white flex-1">
                   <img src={member.image} alt={member.name} width="100" height="100" style={{ width: "100%", height: "auto", aspectRatio: "1/1", objectFit: "cover" }} />
 
-                  <div className="p-4 bg-white">
-                    <h2 className="text-xl mb-2 text-black">{member.name}</h2>
-                    <h3 className="text-black">{member.program}</h3>
+                  <div className="p-4 bg-white ">
+                  <div className="name-div">
+                      <h2 className="text-xl mb-2 text-black">{member.name}</h2>
+                    </div>
+                  <div className="program-div">
+                      <h3 className="text-black">{member.program}</h3>
+                  </div>
+                    
                     {/* <div>
                   {member.personalSite && (
                     <a href={member.personalSite} className="text-blue-500 mr-2" target="_blank" rel="noopener noreferrer">
