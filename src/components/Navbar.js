@@ -12,7 +12,7 @@ function Navbar() {
     setMenuOpen(!menuOpen);
   };
 
-  useEffect(() => { //Set active section (match URL)
+  useEffect(() => { //Set active section (ensure match URL)
     const currentUrl = router.asPath;
     const activeNav = siteConfig.navigation.find((nav) => nav.url === currentUrl);
     if (activeNav) {
