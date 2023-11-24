@@ -106,6 +106,10 @@ body {
 .link-underline:hover {
   background-size: 100% 4px;
   background-position: 0 100%;
+ 
+}
+.links:hover{
+  cursor:pointer;
 }
 
 @media (max-width: 640px) {
@@ -134,6 +138,17 @@ body {
   }
 }
 
+/* GALLERY */
+
+  .album-card {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .album-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+  }
 
 
 @keyframes float {
@@ -193,3 +208,4 @@ body {
 .bubble:nth-child(6) {
   animation-delay: 1s;
 }
+

@@ -6,6 +6,8 @@ import 'react-image-gallery/styles/css/image-gallery.css';
 import Link from 'next/link';
 import Head from 'next/head';
 import TemplatePage from '@/reusable/TemplatePage';
+import { useRouter } from 'next/router';
+
 
 const galleryData = siteConfig.gallery;
 
@@ -29,12 +31,16 @@ function GalleryViewer({ gallery }) {
 
 
     // Set up an interval to automatically switch images
-
     const imageItems = gallery.images.map((imageUrl) => ({
       original: imageUrl,
       thumbnail: imageUrl,
     }));
-
+    
+    const router = useRouter();
+    const goBack = () => {
+      console.log('Router Object:', router);
+      router.back();
+    };
     return (
       <div>
         <Head>
@@ -43,7 +49,29 @@ function GalleryViewer({ gallery }) {
         <Navbar />
 
         <div>
-          <TemplatePage title={`Gallery - ${gallery.name}`}>
+        <TemplatePage >
+        <div style={{ display: 'flex', alignItems: 'center', marginBottom: '16px' }}>
+          <button
+            onClick={() => router.back()}
+            style={{
+              padding: '8px 16px',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              transition: 'transform 0.3s ease-in-out',
+              transformOrigin: 'center bottom',
+            }}
+            onMouseEnter={(e) => e.target.style.transform = 'scale(1.1)'}
+            onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-left" viewBox="0 0 16 16">
+              <path fillRule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+            </svg>
+            <span style={{ marginLeft: '8px' }}>Go Back</span>
+          </button>
+          <div style={{ marginLeft: '16px', fontWeight: 'bold', fontSize: '1.5rem' }}>{gallery.name}</div>
+        </div>
+        
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
               <div className="relative h-100" style={{ overflow: 'hidden' }}>
                 <ImageGallery
@@ -56,12 +84,6 @@ function GalleryViewer({ gallery }) {
                   lazyLoad={true}
 
                 />
-              </div>
-
-              <div className="mt-8">
-                <h2 className="text-2xl font-bold">{gallery.name}</h2>
-                <p className="text-gray-500">{gallery.dateInfo}</p>
-                <p className="mt-4">{gallery.description}</p>
               </div>
             </div>
           </TemplatePage>
