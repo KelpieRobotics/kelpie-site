@@ -30,7 +30,16 @@ export default function Competition() {
         return sponsors.filter(sponsor => sponsor.yearsActive.includes(year));
     }
 
-    const sponsorsCards = [];
+    let sponsorsCards = filteredSponsors.map((sponsor,index) => {
+      return(
+        <SponsorCard key={sponsor.name} 
+        name={sponsor.name} 
+        website={sponsor.website} 
+        logo={sponsor.logo}/>
+      )
+     
+    })
+
 
     return (
         <div>
@@ -48,27 +57,11 @@ export default function Competition() {
             </TemplatePage>
 
             <div className="flex flex-col items-center justify-center bg-[url] bg-cover bg-center m-8">
-
-              <div className="flex justify-center">
-                <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-                  {filteredSponsors.map((sponsor) => (
-                    /* sponsorsCards.push(<SponsorCard key={sponsor.name} 
-                                name={sponsor.name} 
-                                website={sponsor.website} 
-                                logo={sponsor.logo}/>) */
-                    <SponsorCard key={sponsor.name} 
-                                name={sponsor.name} 
-                                website={sponsor.website} 
-                                logo={sponsor.logo}/>
-
-                  ))}
-
-                  {/* <Carousel cards={sponsorsCards}/> */}
-                </ul>
-              </div>
+              
+              <Carousel cards={sponsorsCards}/>
 
 
-              <div className="text-white">
+              <div className="text-white p-0.5">
                 <br />
                   <br />
           
