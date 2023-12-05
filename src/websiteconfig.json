@@ -141,6 +141,19 @@
         "/assets/gallery/2022-california-trip/16.JPG",
         "/assets/gallery/2022-california-trip/17.JPG"
       ]
+    },
+    {
+      "id": "2023",
+      "name": "2023 - MATE ROV Competition",
+      "description": "",
+      "dateInfo": "June 2023",
+      "coverImage": "/assets/gallery/2023/1.JPG",
+      "images": [
+        "/assets/gallery/2023/1.JPG",
+        "/assets/gallery/2023/2.JPG",
+        "/assets/gallery/2023/3.JPG",
+        "/assets/gallery/2023/4.JPG"
+      ]
     }
   ],
   "teamMembers": [

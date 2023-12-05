@@ -12,7 +12,7 @@ function Navbar() {
     setMenuOpen(!menuOpen);
   };
 
-  useEffect(() => { //Set active section (match URL)
+  useEffect(() => { //Set active section (ensure match URL)
     const currentUrl = router.asPath;
     const activeNav = siteConfig.navigation.find((nav) => nav.url === currentUrl);
     if (activeNav) {
@@ -21,7 +21,7 @@ function Navbar() {
   }, [router.asPath]);
   
   return (
-    <header className="flex items-center justify-between px-4 py-2 bg-gray-900 text-white" style={{ position: 'sticky', top: 0 }}>
+    <header className="flex items-center justify-between px-4 py-2 bg-gray-900 text-white" style={{ position: 'sticky', top: 0,  }}>
       <Link href="/">
         <div className="flex items-center space-x-2">
           <Image
