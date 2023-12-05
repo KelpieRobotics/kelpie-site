@@ -61,14 +61,18 @@ export default function Competition() {
               <Carousel cards={sponsorsCards}/>
 
 
-              <div className="text-white p-0.5">
+              <div className="text-white p-0.5"
+              >
                 <br />
                   <br />
           
-                <label htmlFor="yearSelect" className="mr-2">
+                <label htmlFor="yearSelect" className="mr-2"
+                style={{textAlign:"center"}}>
                   Select year:
                 </label>
-                <select id="yearSelect" value={selectedYear} onChange={handleYearChange} className="text-black">
+                <select id="yearSelect" value={selectedYear} onChange={handleYearChange} className="text-black bg-gray-900"
+                style={{color: "#fff",padding:"2px",borderRadius:"5px",width:"100px",textAlign:"center",cursor:"pointer"}}
+                >
                   {years.map((year) => (
                     <option key={year} value={year}>
                       {year}
