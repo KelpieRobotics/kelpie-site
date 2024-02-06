@@ -25,6 +25,7 @@ export async function getStaticProps({ params }) {
 }
 
 function GalleryViewer({ gallery }) {
+  const router = useRouter();
 
   if (gallery) {
 
@@ -36,7 +37,6 @@ function GalleryViewer({ gallery }) {
       thumbnail: imageUrl,
     }));
     
-    const router = useRouter();
     const goBack = () => {
       console.log('Router Object:', router);
       router.back();
