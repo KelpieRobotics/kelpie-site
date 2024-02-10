@@ -6,6 +6,15 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --total-brand: 6;
+  --logo-width: 12rem;
+  --total-logo-width: calc(var(--total-brand) * var(--logo-width));
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
@@ -208,4 +217,69 @@ body {
 .bubble:nth-child(6) {
   animation-delay: 1s;
 }
+
+
+/* Styles for the paragraph compoenent */
+
+.paragraph {
+  white-space:pre-line;
+  text-align: justify;
+  text-justify: inter-word;
+  /* font-family: 'Times New Roman', Times, serif; */
+  padding: 2px;
+}
+
+.scroller{
+  display: grid;
+  grid-auto-flow: column;
+  /* border: 5px solid limegreen; */
+  grid-auto-columns: 100%;
+  gap: .25rem;
+  overflow: hidden;
+}
+
+
+/* Styles for the carousel */
+.carousel {
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  /* border:5px solid red; */
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: .25rem;
+  animation: 40s slide infinite linear;
+  flex-wrap: nowrap;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 0.25rem));/*0.25 is the gap defined for .scroller. If changed, change it here too */
+  }
+  
+}
+
+.item {
+  /* border: 5px solid pink; */
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .item {
+    min-width: 70px;
+  }
+}
+
+.item:hover{
+  transform: scale(0.9);
+}
+
+
+
 
