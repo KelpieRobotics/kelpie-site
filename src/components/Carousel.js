@@ -5,7 +5,7 @@ export const Carousel = ({cards})=>{
             <div className="carousel">
                     {cards.map((card,index)=>{
                         return(
-                            <div className="item">
+                            <div key={index} className="item">
                                 {card}
                             </div>
                         )
@@ -14,7 +14,7 @@ export const Carousel = ({cards})=>{
             <div className="carousel">
                     {cards.map((card,index)=>{
                         return(
-                            <div className="item">
+                            <div key={index} className="item">
                                 {card}
                             </div>
                         )
