@@ -73,7 +73,7 @@ function GalleryViewer({ gallery }) {
         </div>
         
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-              <div className="relative h-100" style={{ overflow: 'hidden' }}>
+              <div className="relative h-100" style={{ overflow: 'hidden',zIndex:1 }}>
                 <ImageGallery
                   items={imageItems}
                   showFullscreenButton={false}
