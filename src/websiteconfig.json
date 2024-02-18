@@ -164,7 +164,7 @@
         2024
       ],
       "name": "Juan Hiedra Primera",
-      "program": "5th Year - Electrical Engineering",
+      "program": "5th Year - Electrical Engineering and Computing Technology",
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/juan_hiedra_primera.webp"
@@ -185,7 +185,7 @@
         2023
       ],
       "name": "Stefan Todorovic",
-      "program": "4th Year - Computer Engineering",
+      "program": "4th Year - Computer Engineering Management Option",
       "personalSite": "https://stefantodorovic.com",
       "linkedin": "https://www.linkedin.com/in/todorovicstefan/",
       "image": "/assets/members/stefan_todorovic.webp"
@@ -197,7 +197,7 @@
         2024
       ],
       "name": "Ethan Bowering",
-      "program": "5th Year - Electrical Engineering",
+      "program": "5th Year - Electrical Engineering and Computing Technology",
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/ethan_bowering.webp"
@@ -244,7 +244,7 @@
         2024
       ],
       "name": "Rikki Romana",
-      "program": "5th Year - Electrical Engineering",
+      "program": "5th Year - Electrical Engineering and Computing Technology",
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/2024_members/rikki_romana.webp"
@@ -300,7 +300,7 @@
         2024
       ],
       "name": "Alae Boufarrachene",
-      "program": "4th Year - Computer Engineering",
+      "program": "4th Year - Computer Engineering Management Option",
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/2024_members/alae_boufarrachene.webp"
@@ -322,7 +322,7 @@
         2024
       ],
       "name": "Tahmeed Khan",
-      "program": "4th Year - Electrical Engineering",
+      "program": "4th Year - Electrical Engineering and Computing Technology",
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/tahmeed_khan.webp"
@@ -493,7 +493,7 @@
         2024
       ],
       "name": "Dakota Squires",
-      "program": "...",
+      "program": "1st Year Mechanical Engineering and Computing Technology",
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/2024_members/dakota_squires.webp"
@@ -547,6 +547,26 @@
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/2024_members/rebecca_ly.webp"
+    },
+    {
+      "yearsActive": [
+        2024
+      ],
+      "name": "Ben Flynn",
+      "program": "5th Year - Software Engineering Management Options",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2024
+      ],
+      "name": "Rafal Rytwinski",
+      "program": "3rd Year - Computer Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
     }
   ]
 }
