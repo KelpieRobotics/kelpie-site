@@ -552,21 +552,42 @@
       "yearsActive": [
         2024
       ],
-      "name": "Ben Flynn",
-      "program": "5th Year - Software Engineering Management Options",
+      "name": "Rafal Rytwinski",
+      "program": "3rd Year - Computer Engineering",
       "personalSite": "",
       "linkedin": "",
-      "image": "/assets/members/2024_members/favicon.png"
+      "image": "/assets/members/2024_members/rafal_rytwinski.webp"
     },
     {
       "yearsActive": [
         2024
       ],
-      "name": "Rafal Rytwinski",
-      "program": "3rd Year - Computer Engineering",
+      "name": "Yacine Boubacar",
+      "program": "2nd Year - Mechanical Engineering and Computing Technology",
       "personalSite": "",
       "linkedin": "",
-      "image": "/assets/members/2024_members/favicon.png"
+      "image": "/assets/members/2024_members/yacine_boubacar.webp"
+    },
+    
+    {
+      "yearsActive": [
+        2024
+      ],
+      "name": "Sacha Arseneault",
+      "program": "2nd Year - Software Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/sacha_arseneault.webp"
+    },
+    {
+      "yearsActive": [
+        2024
+      ],
+      "name": "Yusuf Al-Khawaldeh",
+      "program": "2nd Year - Software Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/yusuf_al-khawaldeh.webp"
     },
     {
       "yearsActive": [
@@ -574,6 +595,16 @@
       ],
       "name": "Miten Soni",
       "program": "3rd Year - Computer Science Management Option",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2024
+      ],
+      "name": "Ben Flynn",
+      "program": "5th Year - Software Engineering Management Options",
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/2024_members/favicon.png"
