@@ -194,7 +194,8 @@
       "yearsActive": [
         2022,
         2023,
-        2024
+        2024,
+        2025
       ],
       "name": "Ethan Bowering",
       "program": "5th Year - Electrical Engineering and Computing Technology",
@@ -286,10 +287,11 @@
     {
       "yearsActive": [
         2023,
-        2024
+        2024,
+        2025
       ],
       "name": "Adam Dia",
-      "program": "2nd Year - Computer Engineering",
+      "program": "3rd Year - Computer Engineering",
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/2024_members/adam_dia.webp"
@@ -319,7 +321,8 @@
     {
       "yearsActive": [
         2023,
-        2024
+        2024,
+        2025
       ],
       "name": "Tahmeed Khan",
       "program": "4th Year - Electrical Engineering and Computing Technology",
@@ -380,20 +383,22 @@
     },
     {
       "yearsActive": [
-        2024
+        2024,
+        2025
       ],
       "name": "Aaditya Shah",
-      "program": "3rd Year - Computer Engineering",
+      "program": "4th Year - Computer Engineering",
       "personalSite": "",
       "linkedin": "https://www.linkedin.com/in/aadi/",
       "image": "/assets/members/2024_members/aaditya_shah.webp"
     },
     {
       "yearsActive": [
-        2024
+        2024,
+        2025
       ],
       "name": "Abdullah Ramadan",
-      "program": "3rd Year - Computer Engineering",
+      "program": "4th Year - Computer Engineering",
       "personalSite": "",
       "linkedin": "https://www.linkedin.com/in/abdullahrama/",
       "image": "/assets/members/2024_members/smiling_abdullah.webp"
@@ -410,10 +415,11 @@
     },
     {
       "yearsActive": [
-        2024
+        2024,
+        2025
       ],
       "name": "Carolina González G.",
-      "program": "3rd Year - Software Engineering",
+      "program": "4th Year - Software Engineering",
       "personalSite": "",
       "linkedin": "https://www.linkedin.com/in/carolina-g-28873b222/",
       "image": "/assets/members/2024_members/carolina_gonzalez.webp"
@@ -440,20 +446,22 @@
     },
     {
       "yearsActive": [
-        2024
+        2024,
+        2025
       ],
       "name": "Sydney Pachal",
-      "program": "2nd Year - Electrical Engineering and Physics",
+      "program": "3rd Year - Electrical Engineering and Physics",
       "personalSite": "",
       "linkedin": "https://www.linkedin.com/in/sydney-pachal-88694a263/",
       "image": "/assets/members/2024_members/sydney_pachal.webp"
     },
     {
       "yearsActive": [
-        2024
+        2024,
+        2025
       ],
       "name": "Amani Louendriz",
-      "program": "3rd Year - Software Engineering",
+      "program": "4th Year - Software Engineering",
       "personalSite": "",
       "linkedin": "https://www.linkedin.com/in/amani-louendriz/",
       "image": "/assets/members/2024_members/Amani_Louendriz.webp"
@@ -470,30 +478,33 @@
     },
     {
       "yearsActive": [
-        2024
+        2024,
+        2025
       ],
       "name": "Ayad Harake",
-      "program": "2nd Year - Electrical Engineering and Computing Technology",
+      "program": "3rd Year - Electrical Engineering and Computing Technology",
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/2024_members/ayad_harake.webp"
     },
     {
       "yearsActive": [
-        2024
+        2024,
+        2025
       ],
       "name": "Colin Jack",
-      "program": "1st Year - Electrical Engineering",
+      "program": "2nd Year - Electrical Engineering",
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/2024_members/colin_jack.webp"
     },
     {
       "yearsActive": [
-        2024
+        2024,
+        2025
       ],
       "name": "Dakota Squires",
-      "program": "1st Year Mechanical Engineering and Computing Technology",
+      "program": "2nd Year Mechanical Engineering and Computing Technology",
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/2024_members/dakota_squires.webp"
@@ -510,10 +521,11 @@
     },
     {
       "yearsActive": [
-        2024
+        2024,
+        2025
       ],
       "name": "Isaiah Kwapisz",
-      "program": "1st Year - Electrical Engineering and Computing Technology",
+      "program": "2nd Year - Electrical Engineering and Computing Technology",
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/2024_members/isaiah_kwapisz.webp"
@@ -540,7 +552,8 @@
     },   
     {
       "yearsActive": [
-        2024
+        2024,
+        2025
       ],
       "name": "Rebecca Ly",
       "program": "4th Year - Mathematics",
@@ -550,20 +563,22 @@
     },
     {
       "yearsActive": [
-        2024
+        2024,
+        2025
       ],
       "name": "Rafal Rytwinski",
-      "program": "3rd Year - Computer Engineering",
+      "program": "4th Year - Computer Engineering",
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/2024_members/rafal_rytwinski.webp"
     },
     {
       "yearsActive": [
-        2024
+        2024,
+        2025
       ],
       "name": "Yacine Boubacar",
-      "program": "2nd Year - Mechanical Engineering and Computing Technology",
+      "program": "3rd Year - Mechanical Engineering and Computing Technology",
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/2024_members/yacine_boubacar.webp"
@@ -624,7 +639,300 @@
         2024
       ],
       "name": "Ben Flynn",
-      "program": "5th Year - Software Engineering Management Options",
+      "program": "5th Year - Software Engineering, Management Option",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Ahmad Muslat",
+      "program": "2nd Year - Electrical Engineering and Computing Technology",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Akram Atassi",
+      "program": "4th Year - Electrical Engineering and Computing Technology",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Kevin Huang",
+      "program": "1st Year - Computer Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Leo Dionne",
+      "program": "3rd Year - Physics and Electrical Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Matias Suxo",
+      "program": "2nd Year - Computer Science, Management and Entrepreneurship Option",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Kirsten Crisp",
+      "program": "3rd Year - Biomedical Mechanical Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Samuel Findling",
+      "program": "5th Year - Mechanical Engineering and Computing Technology",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Yazan Elmasry",
+      "program": "4th Year - Mechanical Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Marianne Aguhar",
+      "program": "1st Year - Computer Science",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Rayyan lodhi",
+      "program": "1st Year - Computer Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2024,
+        2025
+      ],
+      "name": "Yahya Osman",
+      "program": "3rd Year - Computer Science",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2024,
+        2025
+      ],
+      "name": "Yassine Moumine",
+      "program": "4th Year - Computer Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2024,
+        2025
+      ],
+      "name": "Mathis Barrette",
+      "program": "3rd Year - Computer Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Amin Khaled",
+      "program": "2nd Year - Electrical Engineering and Computing Technology",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Emina Lai",
+      "program": "1st Year - Physics and Electrical Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Miguel Sandri",
+      "program": "th Year - Biomedical Mechanical Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Ryan Ekong",
+      "program": "2nd Year - Biomedical Mechanical Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Sarah Dumont",
+      "program": "",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Anas Bourfia",
+      "program": "4th Year - Computer Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Anojan Sivaranjan",
+      "program": "1st Year - Software Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Chada Bendriss",
+      "program": "4th Year - Computer Science",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Daniela Bordeianu",
+      "program": "1st Year - Computer Science",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Hasin Zaman",
+      "program": "4th Year - Joint Honors Computer Science and Mathematics",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Martin Patrouchev",
+      "program": "4th Year - Computer Science, Data Science Option",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Nizar Zariouh",
+      "program": "4th Year - Computer Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Rayane Bouzeriba",
+      "program": "1st Year - Computer Science",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Younes Mekouar",
+      "program": "2nd Year - Computer Engineering",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Meriem Mostefai",
+      "program": "4th Year - Computer Science",
+      "personalSite": "",
+      "linkedin": "",
+      "image": "/assets/members/2024_members/favicon.png"
+    },
+    {
+      "yearsActive": [
+        2025
+      ],
+      "name": "Scarlett Kelly",
+      "program": "PhD - Digital Transformation and Innovation",
       "personalSite": "",
       "linkedin": "",
       "image": "/assets/members/2024_members/favicon.png"
