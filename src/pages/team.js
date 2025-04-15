@@ -16,7 +16,7 @@ export default function TeamMembers() {
     return years;
   }, []);
 
-  const [selectedYear, setSelectedYear] = useState(2024);
+  const [selectedYear, setSelectedYear] = useState(2025);
 
   const handleYearChange = event => {
     setSelectedYear(parseInt(event.target.value));
