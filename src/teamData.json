@@ -1,0 +1,89 @@
+{
+"teams": [
+    {
+    "name": "Software Team",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "yearsData": [
+        {
+        "year": 2025,
+        "CTO": 1,
+        "Junior": 2,
+        "coreMembers": [
+            3,4,5
+        ],
+        "generalMembers": [
+            1
+        ]
+        }
+    ]
+    },
+    {
+    "name": "Electrical Team",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "yearsData": [
+        {
+        "year": 2025,
+        "CTO": 1,
+        "Junior": 1,
+        "coreMembers": [
+            1
+        ],
+        "generalMembers": [
+            1
+        ]
+        }
+    ]
+    },
+    {
+    "name": "Mechanical Team",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "yearsData": [
+        {
+        "year": 2025,
+        "CTO": 1,
+        "Junior": 1,
+        "coreMembers": [
+            1
+        ],
+        "generalMembers": [
+            1
+        ]
+        }
+    ]
+    },
+    {
+    "name": "Logistics Team",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "yearsData": [
+        {
+        "year": 2025,
+        "CTO": 1,
+        "Junior": 1,
+        "coreMembers": [
+            1
+        ],
+        "generalMembers": [
+            1
+        ]
+        }
+    ]
+    },
+    {
+    "name": "General Members",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "yearsData": [
+        {
+        "year": 2025,
+        "CTO": 1,
+        "Junior": 1,
+        "coreMembers": [
+            1
+        ],
+        "generalMembers": [
+            1
+        ]
+        }
+    ]
+    }
+]
+}
