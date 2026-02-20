@@ -47,13 +47,13 @@ export default function TeamMembers() {
 
   const MemberTemplate = ({member}) => {
     return (
-      <div className="rounded-full overflow-hidden shadow-lg flex flex-row h-24 items-center justify-start border-2 border-teal-600">
+      <div className="rounded-full overflow-hidden shadow-lg flex flex-row h-24 items-center justify-start">
         <div className="relative w-24 h-24 flex-shrink-0">
           <Image 
             src={member.image}
             alt={member.name}
             fill
-            className="object-cover rounded-full ring-4 ring-teal-600"
+            className="object-cover rounded-full"
           />
         </div>
         <div className="name-div w-64 ml-4">
