@@ -49,6 +49,16 @@ export default function TeamMembers() {
     return teamMembers.find((member) => member.id === id);
   }
 
+  function sortClosure(a, b) {
+    if (a.image && !b.image) {
+      return -1;
+    } else if (!a.image && b.image) {
+      return 1;
+    }
+
+    return a.name.localeCompare(b.name);
+  }
+
   const MemberTemplate = ({ member }) => {
     return (
       <div className="rounded-xl overflow-hidden bg-white shadow-lg flex flex-row items-center justify-start h-full">
@@ -58,15 +68,15 @@ export default function TeamMembers() {
               src={member.image}
               alt={member.name}
               fill
-              className="object-cover rounded-xl border-4"
+              className="object-cover rounded-xl border-4 border-slate-300"
             />
           </div>
         )}
-        <div className="p-2">
-          <div className="name-div w-64 ml-4">
+        <div className="py-2 px-4">
+          <div className="name-div w-64">
             <h2 className="text-xl text-black">{member.name}</h2>
           </div>
-          <div className="program-div ml-4 flex-auto">
+          <div className="program-div flex-auto">
             <h3 className="text-black">{member.program}</h3>
           </div>
         </div>
@@ -139,14 +149,14 @@ export default function TeamMembers() {
                     <h2 className="text-xl my-3 text-white font-bold">
                       Core Members
                     </h2>
-                    <ul className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-                      {getMembersByIds(team.yearsData.coreMembers).map(
-                        (member) => (
+                    <ul className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+                      {getMembersByIds(team.yearsData.coreMembers)
+                        .sort((a, b) => sortClosure(a, b))
+                        .map((member) => (
                           <li key={member.name}>
                             <MemberTemplate member={member}></MemberTemplate>
                           </li>
-                        ),
-                      )}
+                        ))}
                     </ul>
                   </div>
                 )}
@@ -155,14 +165,14 @@ export default function TeamMembers() {
                     <h2 className="text-xl my-3 text-white font-bold">
                       General Members
                     </h2>
-                    <ul className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-                      {getMembersByIds(team.yearsData.generalMembers).map(
-                        (member) => (
+                    <ul className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+                      {getMembersByIds(team.yearsData.generalMembers)
+                        .sort((a, b) => sortClosure(a, b))
+                        .map((member) => (
                           <li key={member.name}>
                             <MemberTemplate member={member}></MemberTemplate>
                           </li>
-                        ),
-                      )}
+                        ))}
                     </ul>
                   </div>
                 )}
@@ -190,35 +200,54 @@ export default function TeamMembers() {
           margin: "2rem",
         }}
       >
-        <div className="flex justify-center">
+        <div className="p-4">
           <h1 className="text-4xl font-bold mb-4">Team Members</h1>
-        </div>
-        <div>
-          <div className="flex justify-center">
-            <label htmlFor="yearSelect" className="mr-2 black-text text-xl">
-              Select year:
-            </label>
-            <select
-              id="yearSelect"
-              className="px-3 py-1 rounded-lg"
-              value={selectedYear}
-              onChange={handleYearChange}
-            >
-              {years.map((year) => (
-                <option key={year} value={year}>
-                  {year}
-                </option>
-              ))}
-            </select>
-            <br />
-            <br />
+          <div className="p-4">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
           </div>
-          <ul>
-            {filteredTeams.map((team) => (
-              <li key={team.name} className="flex flex-col">
-                <TeamTemplate team={team}></TeamTemplate>
-              </li>
+          <label htmlFor="yearSelect" className="mr-2 black-text text-xl">
+            View past teams:
+          </label>
+          <select
+            id="yearSelect"
+            className="px-3 py-1 rounded-lg"
+            value={selectedYear}
+            onChange={handleYearChange}
+          >
+            {years.map((year) => (
+              <option key={year} value={year}>
+                {year}
+              </option>
             ))}
+          </select>
+        </div>
+        <ul>
+          {filteredTeams.map((team) => (
+            <li key={team.name} className="flex flex-col">
+              <TeamTemplate team={team}></TeamTemplate>
+            </li>
+          ))}
+        </ul>
+        <div className="p-4">
+          <h2 className="text-xl my-3 text-black font-bold">
+            All {selectedYear} Team Members
+          </h2>
+          <ul className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+            {filteredTeamMembers
+              .sort((a, b) => sortClosure(a, b))
+              .map((member) => (
+                <li key={member.name} className="flex flex-col">
+                  <MemberTemplate member={member}></MemberTemplate>
+                </li>
+              ))}
           </ul>
         </div>
       </div>
