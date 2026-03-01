@@ -1,15 +1,16 @@
 import siteConfig from "@/websiteconfig";
 import teamData from "@/teamData.json";
-import { useState } from "react";
+import members from "@/members.json";
+import { useState} from "react";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Head from "next/head";
 
-import { BsChevronDown } from "react-icons/bs";
-import { BsChevronUp } from "react-icons/bs";
+import { BsChevronDown, BsChevronUp } from "react-icons/bs";
+import * as BsIcons from "react-icons/bs";
 
 export default function TeamMembers() {
-  const teamMembers = siteConfig.teamMembers;
+  const teamMembers = members.teamMembers;
   const teams = teamData.teams;
   const years = siteConfig.years;
 
@@ -59,6 +60,11 @@ export default function TeamMembers() {
     return a.name.localeCompare(b.name);
   }
 
+  const IconImport = ({name}) => {
+    const Icon = BsIcons[name];
+    return Icon ? <Icon className="w-10 h-10 text-white"/> : null;
+  };
+
   const MemberTemplate = ({ member }) => {
     return (
       <div className="rounded-xl overflow-hidden bg-white shadow-lg flex flex-row items-center justify-start h-full">
@@ -105,7 +111,10 @@ export default function TeamMembers() {
           onClick={() => setCollapsed((prev) => !prev)}
           className="flex justify-between items-center"
         >
+          <div className="flex gap-3">
+          <IconImport name={team.icon}/>
           <h1 className="text-3xl mb-3 text-white font-bold">{team.name}</h1>
+          </div>
           {collapsed ? (
             <BsChevronDown className="w-6 h-6 text-white" />
           ) : (
@@ -201,7 +210,26 @@ export default function TeamMembers() {
         }}
       >
         <div className="p-4">
-          <h1 className="text-4xl font-bold mb-4">Team Members</h1>
+          <div className="flex flex-column justify-between items-center">
+          <h1 className="text-4xl font-bold mb-4">The {selectedYear} Kelpie Team</h1>
+          <div>
+            <label htmlFor="yearSelect" className="mr-2 black-text text-xl">
+            View other years:
+          </label>
+          <select
+            id="yearSelect"
+            className="px-3 py-1 rounded-lg"
+            value={selectedYear}
+            onChange={handleYearChange}
+          >
+            {years.sort((a, b) => b - a).map((year) => (
+              <option key={year} value={year}>
+                {year}
+              </option>
+            ))}
+          </select>
+          </div>
+          </div>
           <div className="p-4">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -213,21 +241,7 @@ export default function TeamMembers() {
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
-          <label htmlFor="yearSelect" className="mr-2 black-text text-xl">
-            View past teams:
-          </label>
-          <select
-            id="yearSelect"
-            className="px-3 py-1 rounded-lg"
-            value={selectedYear}
-            onChange={handleYearChange}
-          >
-            {years.map((year) => (
-              <option key={year} value={year}>
-                {year}
-              </option>
-            ))}
-          </select>
+          
         </div>
         <ul>
           {filteredTeams.map((team) => (
