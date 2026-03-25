@@ -79,7 +79,7 @@ export default function TeamMembers() {
           </div>
         )}
         <div className="py-2 px-4">
-          <div className="name-div w-64">
+          <div className="name-div">
             <h2 className="text-xl text-black">{member.name}</h2>
           </div>
           <div className="program-div flex-auto">
