@@ -3,7 +3,9 @@
     {
     "name": "Software Team",
     "icon": "BsRouter",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": ["Create the code for vehicle motion, tool operation, and communication between onboard electronics and the surface control.",
+"Design and maintain the operator interface, providing real-time camera feeds, sensor data, and intuitive controls.",
+"Create data analysis and automation tools tailored to the specific challenges of the MATE ROV Competition, ensuring precise control and informed decision-making during missions."],
     "yearsData": [
         {
         "year": 2026,
@@ -50,7 +52,9 @@
     {
     "name": "Electrical Team",
     "icon": "BsPlug",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": ["Design and build the onboard electrical system for the ROV and float, housed within a watertight enclosure.",
+"Create custom Altium-designed circuit boards for power, motor, servo, and sensor control.",
+"In-house planning, design, and assembly of PCB to ensure a compact and dependable system."],
     "yearsData": [
         {
         "year": 2026,
@@ -97,7 +101,10 @@
     {
     "name": "Mechanical Team",
     "icon": "BsGear",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": ["Create the physical housing for the ROV and vertical profiling float.",
+        "Design, fabricate, build, and test the frame and tools needed to complete missions.",
+        "Operate SOLIDWORKS to design all components.",
+        "Fabricate in house at the machine shop oncampus or via 3D printing."],
     "yearsData": [
         {
         "year": 2026,
@@ -144,7 +151,11 @@
     {
     "name": "Logistics Team",
     "icon": "BsFileEarmarkRuled",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": ["Secure and maintain sponsorships.",
+"Manage marketing and outreach initiatives.",
+"Lead fundraising efforts.",
+"Coordinate workshops, and organize team-bonding activities.",
+"Drive social outreach, community service, and engagement initiatives that reflect commitment to corporate social responsibility (CSR) and STEM promotion."],
     "yearsData": [
         {
         "year": 2026,
@@ -173,7 +184,7 @@
     {
     "name": "Float Team",
     "icon": "BsWater",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "The Float Team is responsible for designing and creating floats.",
     "yearsData": [
         {
         "year": 2025,
@@ -189,7 +200,7 @@
     {
     "name": "Mixed Displinary Team",
     "icon": "BsGlobe",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "The Mixed Displinary Team has members that were involved in multiple of the other subteams.",
     "yearsData": [
         {
         "year": 2024,
