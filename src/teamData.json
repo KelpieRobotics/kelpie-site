@@ -1,6 +1,56 @@
 {
 "teams": [
     {
+    "name": "Mechanical Team",
+    "icon": "BsGear",
+    "description": ["Create the physical housing for the ROV and vertical profiling float.",
+        "Design, fabricate, build, and test the frame and tools needed to complete missions.",
+        "Operate SOLIDWORKS to design all components.",
+        "Fabricate in house at the machine shop oncampus or via 3D printing."],
+    "yearsData": [
+        {
+        "year": 2026,
+        "CTO": 4,
+        "Junior": 8,
+        "coreMembers": [
+            89, 90, 92, 93, 9
+        ],
+        "generalMembers": [
+            91, 7, 95, 94
+        ]
+        },
+        {
+        "year": 2025,
+        "CTO": null,
+        "Junior": null,
+        "coreMembers": [
+            4, 7, 8, 9
+        ],
+        "generalMembers": [
+            13
+        ]
+        },
+        {
+        "year": 2024,
+        "CTO": null,
+        "Junior": 57,
+        "coreMembers": [
+            59, 49, 4, 13
+        ],
+        "generalMembers": null
+        },
+        {
+        "year": 2023,
+        "CTO": 48,
+        "Junior": null,
+        "coreMembers": [
+            59, 57
+        ],
+        "generalMembers": null
+        }
+    ]
+    },
+    {
     "name": "Software Team",
     "icon": "BsRouter",
     "description": ["Create the code for vehicle motion, tool operation, and communication between onboard electronics and the surface control.",
@@ -12,11 +62,9 @@
         "CTO": 1,
         "Junior": null,
         "coreMembers": [
-            81,83,97,98,99,100
+            81,83,97,98,100
         ],
-        "generalMembers": [
-            82,101
-        ]
+        "generalMembers": null
         },
         {
         "year": 2025,
@@ -61,10 +109,10 @@
         "CTO": 14,
         "Junior": 19,
         "coreMembers": [
-            81, 83
+            81, 83, 104
         ],
         "generalMembers": [
-            75, 76, 20, 78, 79, 80, 18, 82, 95, 96
+            76, 20, 79, 80, 18
         ]
         },
         {
@@ -99,56 +147,6 @@
     ]
     },
     {
-    "name": "Mechanical Team",
-    "icon": "BsGear",
-    "description": ["Create the physical housing for the ROV and vertical profiling float.",
-        "Design, fabricate, build, and test the frame and tools needed to complete missions.",
-        "Operate SOLIDWORKS to design all components.",
-        "Fabricate in house at the machine shop oncampus or via 3D printing."],
-    "yearsData": [
-        {
-        "year": 2026,
-        "CTO": 4,
-        "Junior": 8,
-        "coreMembers": [
-            89, 90, 92, 93, 9
-        ],
-        "generalMembers": [
-            91, 7, 28, 95, 96, 94
-        ]
-        },
-        {
-        "year": 2025,
-        "CTO": null,
-        "Junior": null,
-        "coreMembers": [
-            4, 7, 8, 9
-        ],
-        "generalMembers": [
-            13
-        ]
-        },
-        {
-        "year": 2024,
-        "CTO": null,
-        "Junior": 57,
-        "coreMembers": [
-            59, 49, 4, 13
-        ],
-        "generalMembers": null
-        },
-        {
-        "year": 2023,
-        "CTO": 48,
-        "Junior": null,
-        "coreMembers": [
-            59, 57
-        ],
-        "generalMembers": null
-        }
-    ]
-    },
-    {
     "name": "Logistics Team",
     "icon": "BsFileEarmarkRuled",
     "description": ["Secure and maintain sponsorships.",
@@ -162,7 +160,7 @@
         "CTO": 4,
         "Junior": null,
         "coreMembers": [
-            89, 90, 2, 85
+            89, 90, 2, 85, 103
         ],
         "generalMembers": [
             84, 44, 86, 87, 88
@@ -184,7 +182,7 @@
     {
     "name": "Float Team",
     "icon": "BsWater",
-    "description": "The Float Team is responsible for designing and creating floats.",
+    "description": ["The Float Team is responsible for designing and creating floats."],
     "yearsData": [
         {
         "year": 2025,
@@ -200,7 +198,7 @@
     {
     "name": "Mixed Displinary Team",
     "icon": "BsGlobe",
-    "description": "The Mixed Displinary Team has members that were involved in multiple of the other subteams.",
+    "description": ["The Mixed Displinary Team has members that were involved in multiple of the other subteams."],
     "yearsData": [
         {
         "year": 2024,

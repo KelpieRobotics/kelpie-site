@@ -128,7 +128,7 @@ export default function TeamMembers() {
           <div>
             <div>
               <ul className="text-white list-disc list-inside">
-              { team.description.map(line => (
+              {team.description.map(line => (
                 <li key={line} className="p-1 ms-2">
                   <b>{line}</b>
                 </li>))

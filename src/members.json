@@ -52,7 +52,7 @@
         "program": "Mechanical Engineering and Computing Technology",
         "personalSite": "",
         "linkedin": "",
-        "image": "/assets/members/2025_members/dakota_squires_25.webp"
+        "image": "/assets/members/2026_members/Dakota2026.jpg"
     },
     {
         "id": 5,
@@ -102,7 +102,7 @@
         "program": "Mechanical Engineering and Computing Technology",
         "personalSite": "",
         "linkedin": "",
-        "image": "/assets/members/2025_members/samuel_findling.webp"
+        "image": "/assets/members/2026_members/Sam2026.jpg"
     },
     {
         "id": 9,
@@ -868,7 +868,6 @@
     {
         "id": 75,
         "yearsActive": [
-            2026
         ],
         "name": "Yann Giffaux",
         "program": "Computer Engineering",
@@ -890,7 +889,6 @@
     {
         "id": 78,
         "yearsActive": [
-            2026
         ],
         "name": "Ramtin Tizfahm",
         "program": "Electrical Engineering",
@@ -934,7 +932,7 @@
     {
         "id": 82,
         "yearsActive": [
-            2026
+            
         ],
         "name": "Steffen Zylstra",
         "program": "Physics and Electrical Engineering",
@@ -1077,7 +1075,6 @@
     {
         "id": 95,
         "yearsActive": [
-            2026
         ],
         "name": "Samy",
         "program": "Mechanical Engineering",
@@ -1088,7 +1085,7 @@
     {
         "id": 96,
         "yearsActive": [
-            2026
+            
         ],
         "name": " Anas Alajez",
         "program": "Computer Engineering",
@@ -1121,7 +1118,7 @@
     {
         "id": 99,
         "yearsActive": [
-            2026
+            
         ],
         "name": "Adam Shousha",
         "program": "Computer Engineering",
@@ -1143,7 +1140,7 @@
     {
         "id": 101,
         "yearsActive": [
-            2026
+            
         ],
         "name": "Sara Ahuja",
         "program": "Computer Science and Mathematics",
@@ -1161,6 +1158,29 @@
         "personalSite": "",
         "linkedin": "",
         "image": ""
+    },
+    {
+        "id": 103,
+        "yearsActive": [
+            2026
+        ],
+        "name": "Charlotte Faragher",
+        "program": "Mechanical Engineering",
+        "personalSite": "",
+        "linkedin": "",
+        "image": "/assets/members/2026_members/Charlotte2026.jpg"
+    },
+    {
+        "id": 104,
+        "yearsActive": [
+            2026
+        ],
+        "name": "Noah Duare",
+        "program": "Computer Engineering",
+        "personalSite": "",
+        "linkedin": "",
+        "image": "/assets/members/2026_members/Noah2026.jpg"
     }
+    
 ]
 }
