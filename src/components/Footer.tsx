@@ -97,7 +97,7 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-            <p className="text-sm text-white/80">kelpierobotics@gmail.com</p>
+            <p className="text-sm text-white/80">kelpierobotics@uottawa.ca</p>
             <p className="text-sm text-white/80">Ottawa, ON, Canada</p>
           </div>
         </div>
