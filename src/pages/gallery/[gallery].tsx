@@ -1,4 +1,4 @@
-import siteConfig from '@/websiteconfig.json';
+import Gallary from '@/gallary.json';
 import Navbar from '@/components/Navbar';
 import { useState, useEffect } from 'react';
 import ImageGallery from 'react-image-gallery';
@@ -9,7 +9,7 @@ import TemplatePage from '@/reusable/TemplatePage';
 import { useRouter } from 'next/router';
 
 
-const galleryData = siteConfig.gallery;
+const galleryData = Gallary.gallery;
 
 export async function getStaticPaths() {
   const paths = galleryData.map((gallery) => ({
@@ -35,6 +35,18 @@ function GalleryViewer({ gallery }) {
     const imageItems = gallery.images.map((imageUrl) => ({
       original: imageUrl,
       thumbnail: imageUrl,
+      renderThumbInner: () => (
+      <div style={{height: '75px', overflow: 'hidden' }}>
+        <img
+          src={imageUrl}
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+          }}
+        />
+      </div>
+    ),
     }));
     
     const goBack = () => {

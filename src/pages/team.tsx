@@ -1,15 +1,15 @@
 import siteConfig from "@/websiteconfig.json";
 import teamData from "@/teamData.json";
 import members from "@/members.json";
-import { useState, useCallback } from 'react';
+import { useState, useCallback } from "react";
 import Navbar from "@/components/Navbar";
-import Footer from '@/components/Footer';
+import Footer from "@/components/Footer";
 import Image from "next/image";
 import Head from "next/head";
 
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 import * as BsIcons from "react-icons/bs";
-import PixelTextReveal from "@/components/PixelTextReveal";
+import { ParagraphSection } from "@/components/Paragraph";
 
 export default function TeamMembers() {
   const teamMembers = members.teamMembers;
@@ -62,9 +62,9 @@ export default function TeamMembers() {
     return a.name.localeCompare(b.name);
   }
 
-  const IconImport = ({name}) => {
+  const IconImport = ({ name }) => {
     const Icon = BsIcons[name];
-    return Icon ? <Icon className="w-10 h-10 text-white"/> : null;
+    return Icon ? <Icon className="w-10 h-10 text-white" /> : null;
   };
 
   const MemberTemplate = ({ member }) => {
@@ -76,7 +76,8 @@ export default function TeamMembers() {
               src={member.image}
               alt={member.name}
               fill
-              className="object-cover rounded-xl border-4 border-slate-300"
+              className="object-cover rounded-xl border-4"
+              style={{ borderColor: "#d8f3ef" }}
             />
           </div>
         )}
@@ -114,8 +115,8 @@ export default function TeamMembers() {
           className="flex justify-between items-center"
         >
           <div className="flex gap-3">
-          <IconImport name={team.icon}/>
-          <h1 className="text-3xl mb-3 text-white font-bold">{team.name}</h1>
+            <IconImport name={team.icon} />
+            <h1 className="text-3xl mb-3 text-white font-bold">{team.name}</h1>
           </div>
           {collapsed ? (
             <BsChevronDown className="w-6 h-6 text-white" />
@@ -127,12 +128,12 @@ export default function TeamMembers() {
         {!collapsed && (
           <div>
             <div>
-              <ul className="text-white list-disc list-inside">
-              {team.description.map(line => (
-                <li key={line} className="p-1 ms-2">
-                  <b>{line}</b>
-                </li>))
-              }
+              <ul className="text-white list-disc list-inside text-xl">
+                {team.description.map((line) => (
+                  <li key={line} className="ms-2">
+                    {line}
+                  </li>
+                ))}
               </ul>
             </div>
             <div className=" rounded-xl p-5 mt-4 bg-teal-700">
@@ -207,53 +208,238 @@ export default function TeamMembers() {
         <title>Team | Kelpie Robotics</title>
       </Head>
       {/* Hero Section */}
-      <section className="relative flex flex-col justify-center text-left text-white overflow-hidden" style={{ height: '50vh', width: '100%' }}>
+      <section
+        className="relative flex flex-col justify-end text-left text-white overflow-hidden"
+        style={{ height: "50vh", width: "100%" }}
+      >
         <Navbar />
         <div
           className="absolute inset-0"
-          style={{ backgroundImage: "url('/assets/branding/Copy of team pic.jpg')", backgroundSize: 'cover', backgroundPosition: '25% 25%'}}
+          style={{
+            backgroundImage: "url('/assets/branding/Good Full team.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "30% 40%",
+          }}
         />
         <div
           className="absolute inset-0"
           style={{
-            background: 'linear-gradient(to right, rgba(0,0,0,0.70) 0%, rgba(0,0,0,0.50) 50%, rgba(0,0,0,0.30) 100%)',
+            background:
+              "linear-gradient(to top, rgba(0,0,0,0.80) 0%, rgba(0,0,0,0.50) 50%, rgba(0,0,0,0.30) 100%)",
           }}
         />
 
         <div
-          className={`relative z-10 flex flex-col items-start px-8 md:px-16 lg:px-24 max-w-5xl`}
+          className={`relative flex flex-col items-center md:px-16 lg:px-24 pb-10`}
         >
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
             Meet Our Team
           </h1>
-          <p className={`text-lg text-gray-300 mt-4 max-w-2xl opacity-100 translate-y-0 opacity-0 translate-y-4`}>
+          <p
+            className={`text-lg text-center mx-2 text-gray-300 max-w-2xl opacity-100 translate-y-0 opacity-0 translate-y-4`}
+          >
             A community of students dedicated to learning and problem-solving.
           </p>
         </div>
       </section>
       <div className="bg-white p-5">
         <div className="p-4">
-          <div className="flex flex-column justify-between items-center">
-          <h1 className="text-4xl font-bold mb-4">Kelpie's {selectedYear} Subteams</h1>
-          <div>
-            <label htmlFor="yearSelect" className="mr-2 black-text text-xl">
-            View other years:
-          </label>
-          <select
-            id="yearSelect"
-            className="px-3 py-1 rounded-lg"
-            value={selectedYear}
-            onChange={handleYearChange}
-          >
-            {years.sort((a, b) => b - a).map((year) => (
-              <option key={year} value={year}>
-                {year}
-              </option>
-            ))}
-          </select>
+          {/* Text */}
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 leading-tight">
+            About the Team
+          </h2>
+
+          {/* Separator — pushed to the right when flipped */}
+          <div
+            className={`w-14 h-1 rounded-full mb-8`}
+            style={{ backgroundColor: "#00A99D" }}
+          />
+          <div className="flex">
+            <div className="text-lg text-gray-600 leading-relaxed">
+              <div>
+                <p>
+                  "Kelpie Robotics was founded in 2022 by a group of passionate
+                  engineering students at the University of Ottawa. At the
+                  forefront of this initiative was our current CEO, Juan Hiedra
+                  Primera, who sought to create a hands-on environment where
+                  students could apply their technical knowledge to real-world
+                  ocean challenges through robotics."
+                </p>
+                <br />
+                <p>
+                  What began as a small exploratory project quickly evolved into
+                  a structured organization committed to innovation,
+                  sustainability, and technical excellence. Since its founding,
+                  the team has grown to include approximately 50 active members,
+                  spanning multiple engineering disciplines and academic years.
+                </p>
+              </div>
+            </div>
+
+            {/* Decoration */}
+            <div className="justify-center items-center p-2">
+              <svg
+                className="opacity-15"
+                width="130"
+                height="200"
+                viewBox="0 0 130 200"
+                fill="none"
+              >
+                {/* Big jellyfish */}
+                <path
+                  d="M8 50 C8 18, 72 18, 72 50 C72 60, 40 64, 8 50Z"
+                  fill="#00A99D"
+                  opacity="0.4"
+                />
+                <path
+                  d="M14 46 C18 28, 62 28, 66 46"
+                  stroke="white"
+                  strokeWidth="1.2"
+                  fill="none"
+                  opacity="0.35"
+                />
+                <path
+                  d="M20 44 C23 32, 57 32, 60 44"
+                  stroke="white"
+                  strokeWidth="0.8"
+                  fill="none"
+                  opacity="0.25"
+                />
+                <path
+                  d="M18 62 C15 76, 20 86, 16 100 C13 112, 18 120, 14 134"
+                  stroke="#00A99D"
+                  strokeWidth="2"
+                  fill="none"
+                  strokeLinecap="round"
+                />
+                <path
+                  d="M28 64 C26 80, 32 90, 28 106 C24 120, 30 130, 26 146"
+                  stroke="#187A72"
+                  strokeWidth="1.8"
+                  fill="none"
+                  strokeLinecap="round"
+                />
+                <path
+                  d="M40 65 C40 82, 40 94, 40 110 C40 124, 40 134, 38 150"
+                  stroke="#00A99D"
+                  strokeWidth="2"
+                  fill="none"
+                  strokeLinecap="round"
+                />
+                <path
+                  d="M52 64 C54 80, 48 90, 52 106 C56 120, 50 130, 54 146"
+                  stroke="#187A72"
+                  strokeWidth="1.8"
+                  fill="none"
+                  strokeLinecap="round"
+                />
+                <path
+                  d="M62 62 C65 76, 60 86, 64 100 C67 112, 62 120, 66 134"
+                  stroke="#00A99D"
+                  strokeWidth="2"
+                  fill="none"
+                  strokeLinecap="round"
+                />
+                <path
+                  d="M12 63 C10 74, 14 80, 11 90"
+                  stroke="#187A72"
+                  strokeWidth="1"
+                  fill="none"
+                  strokeLinecap="round"
+                  opacity="0.5"
+                />
+                <path
+                  d="M68 63 C70 74, 66 80, 69 90"
+                  stroke="#00A99D"
+                  strokeWidth="1"
+                  fill="none"
+                  strokeLinecap="round"
+                  opacity="0.5"
+                />
+                {/* Small jellyfish */}
+                <path
+                  d="M86 30 C86 16, 122 16, 122 30 C122 36, 104 38, 86 30Z"
+                  fill="#187A72"
+                  opacity="0.35"
+                />
+                <path
+                  d="M90 28 C93 20, 118 20, 120 28"
+                  stroke="white"
+                  strokeWidth="0.8"
+                  fill="none"
+                  opacity="0.3"
+                />
+                <path
+                  d="M92 37 C90 46, 93 52, 91 60"
+                  stroke="#187A72"
+                  strokeWidth="1.5"
+                  fill="none"
+                  strokeLinecap="round"
+                />
+                <path
+                  d="M100 38 C99 48, 102 54, 100 64"
+                  stroke="#00A99D"
+                  strokeWidth="1.5"
+                  fill="none"
+                  strokeLinecap="round"
+                />
+                <path
+                  d="M108 38 C110 48, 106 54, 109 64"
+                  stroke="#187A72"
+                  strokeWidth="1.5"
+                  fill="none"
+                  strokeLinecap="round"
+                />
+                <path
+                  d="M116 37 C118 46, 115 52, 117 60"
+                  stroke="#00A99D"
+                  strokeWidth="1.5"
+                  fill="none"
+                  strokeLinecap="round"
+                />
+              </svg>
+            </div>
           </div>
+
+          <div className="flex flex-column justify-between items-center ">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 mt-2 text-gray-900 leading-tight">
+              Kelpie's {selectedYear} Subteams
+            </h1>
+          </div>
+          <div
+            className={`w-14 h-1 rounded-full mb-8 `}
+            style={{ backgroundColor: "#00A99D" }}
+          />
+          <div className="flex flex-column justify-between flex-wrap gap-2">
+            <p className="text-lg text-gray-600">
+              To maintain efficiency and specialization, the team is divided
+              into five sub-teams, each focusing on a core area of the project:
+            </p>
+            <div>
+              <label
+                htmlFor="yearSelect"
+                className="mr-2 text-gray-900 text-xl"
+              >
+                View other years:
+              </label>
+              <select
+                id="yearSelect"
+                className="px-3 py-1 rounded-lg text-gray-900"
+                value={selectedYear}
+                onChange={handleYearChange}
+              >
+                {years
+                  .sort((a, b) => b - a)
+                  .map((year) => (
+                    <option key={year} value={year}>
+                      {year}
+                    </option>
+                  ))}
+              </select>
+            </div>
           </div>
         </div>
+
         <ul>
           {filteredTeams.map((team) => (
             <li key={team.name} className="flex flex-col">
@@ -278,6 +464,5 @@ export default function TeamMembers() {
       </div>
       <Footer />
     </div>
-    
   );
 }

@@ -26,7 +26,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-sm text-white/80">
-              University of Ottawa&apos;s underwater robotics team, since 2022.
+              University of Ottawa's underwater robotics team, since 2022.
             </p>
           </div>
 
@@ -97,7 +97,7 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-            <p className="text-sm text-white/80">kelpierobotics@uottawa.ca</p>
+            <p className="text-sm text-white/80">{siteConfig.email}</p>
             <p className="text-sm text-white/80">Ottawa, ON, Canada</p>
           </div>
         </div>

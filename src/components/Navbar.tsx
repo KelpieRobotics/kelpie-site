@@ -52,27 +52,16 @@ function Navbar() {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
-      {/* Jellyfish decoration */}
-      <svg className="absolute right-4 top-0 opacity-10 pointer-events-none" width="38" height="64" viewBox="0 0 80 130" fill="none">
-        <path d="M5 38 C5 14, 65 14, 65 38 C65 48, 35 52, 5 38Z" fill="#00A99D" />
-        <path d="M11 34 C16 20, 54 20, 59 34" stroke="#187A72" strokeWidth="1.5" fill="none" opacity="0.5" />
-        <path d="M14 50 C11 64, 16 74, 12 88 C9 100, 14 108, 10 122" stroke="#00A99D" strokeWidth="2" fill="none" strokeLinecap="round" />
-        <path d="M24 52 C22 68, 28 78, 24 94 C20 108, 26 116, 22 130" stroke="#187A72" strokeWidth="1.8" fill="none" strokeLinecap="round" />
-        <path d="M35 53 C35 70, 35 82, 33 98" stroke="#00A99D" strokeWidth="2" fill="none" strokeLinecap="round" />
-        <path d="M46 52 C48 68, 42 78, 46 94 C50 108, 44 116, 48 130" stroke="#187A72" strokeWidth="1.8" fill="none" strokeLinecap="round" />
-        <path d="M56 50 C59 64, 54 74, 58 88 C61 100, 56 108, 60 122" stroke="#00A99D" strokeWidth="2" fill="none" strokeLinecap="round" />
-      </svg>
-
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-8" style={{ paddingTop: '18px', paddingBottom: '18px' }}>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg">
+      <div className="mx-auto flex items-center justify-between px-6 md:px-8">
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 shrink-0">
-          <Image src="/assets/branding/Copy of logo_color.svg" alt="Kelpie Robotics" width={80} height={80} />
+          <Image src="/assets/branding/Copy of logo_color.svg" alt="Kelpie Robotics" width={100} height={100} />
         </Link>
 
         {/* Desktop nav */}
-        <nav ref={dropdownRef} className="hidden md:flex items-center gap-7">
+        <nav ref={dropdownRef} className="hidden md:flex items-center gap-7" style={{ paddingTop: '18px', paddingBottom: '18px' }}>
           {NAV_ITEMS.map((item) => {
             const active = isActive(item.url, item.children);
 
@@ -150,11 +139,11 @@ function Navbar() {
         {/* Right side: CTA + socials */}
         <div className="hidden md:flex items-center gap-4">
           <Link
-            href="/contact-us"
+            href="https://give.uottawa.ca/page/162055/donate/1?fund.id=EN328N"
             className="px-5 py-2.5 rounded-full text-sm font-semibold text-white transition-all hover:shadow-md hover:scale-105"
             style={{ backgroundColor: '#00A99D' }}
           >
-            Join Our Team
+            Make a Donation
           </Link>
 
         </div>
@@ -162,7 +151,7 @@ function Navbar() {
         {/* Mobile hamburger */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden p-2 rounded-lg text-gray-700"
+          className="md:hidden p-2 rounded-lg text-gray-700 p-4"
           aria-label="Open menu"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
