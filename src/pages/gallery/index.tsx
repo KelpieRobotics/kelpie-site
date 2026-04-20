@@ -1,4 +1,4 @@
-import Gallary from '@/gallary.json';
+import Gallery from '@/gallary.json';
 import Link from 'next/link';
 import Head from 'next/head';
 import Navbar from '@/components/Navbar';
@@ -47,10 +47,10 @@ export default function Home() {
       <Navbar/>
           <div className="bg-white p-5">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-              <h1 className="text-4xl md:text-5xl font-bold mt-20 text-gray-900 leading-tight">Gallary</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mt-20 text-gray-900 leading-tight">Gallery</h1>
             </div>
             {['2026', '2025', '2023', '2022'].map(year => (
-              <GallerySection key={year} year={year} albums={Gallary.gallery} />
+              <GallerySection key={year} year={year} albums={Gallery.gallery} />
             ))}
 
           </div>

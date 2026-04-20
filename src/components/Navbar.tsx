@@ -11,6 +11,7 @@ const NAV_ITEMS = [
       { title: 'Our Team', url: '/team' },
       { title: 'Competition', url: '/competition' },
       { title: 'Gallery', url: '/gallery' },
+      { title: 'FAQ', url: '/faq'}
     ],
   },
   {

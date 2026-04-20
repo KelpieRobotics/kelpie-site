@@ -1,4 +1,4 @@
-import Gallary from '@/gallary.json';
+import Gallery from '@/gallary.json';
 import Navbar from '@/components/Navbar';
 import { useState, useEffect } from 'react';
 import ImageGallery from 'react-image-gallery';
@@ -9,7 +9,7 @@ import TemplatePage from '@/reusable/TemplatePage';
 import { useRouter } from 'next/router';
 
 
-const galleryData = Gallary.gallery;
+const galleryData = Gallery.gallery;
 
 export async function getStaticPaths() {
   const paths = galleryData.map((gallery) => ({

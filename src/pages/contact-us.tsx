@@ -22,18 +22,18 @@ const socialLinks = [
     label: "LinkedIn",
     color: "text-blue-700 hover:text-blue-900",
   },
-  {
-    href: "https://www.facebook.com/profile.php?id=100075181450829",
-    icon: FaFacebook,
-    label: "Facebook",
-    color: "text-blue-700 hover:text-blue-900",
-  },
-  {
-    href: "https://twitter.com/kelpie_robotics",
-    icon: FaTwitter,
-    label: "Twitter",
-    color: "text-sky-500 hover:text-sky-700",
-  },
+  // {
+  //   href: "https://www.facebook.com/profile.php?id=100075181450829",
+  //   icon: FaFacebook,
+  //   label: "Facebook",
+  //   color: "text-blue-700 hover:text-blue-900",
+  // },
+  // {
+  //   href: "https://twitter.com/kelpie_robotics",
+  //   icon: FaTwitter,
+  //   label: "Twitter",
+  //   color: "text-sky-500 hover:text-sky-700",
+  // },
   {
     href: "https://www.instagram.com/kelpie_robotics/",
     icon: FaInstagram,
