@@ -57,7 +57,8 @@
     },
     {
       "yearsActive": [
-        2023
+        2023,
+        2026
       ],
       "name": "Solidworks",
       "website": "https://www.solidworks.com",
@@ -65,7 +66,8 @@
     },
     {
       "yearsActive": [
-        2023
+        2023,
+        2026
       ],
       "name": "Lonehaven",
       "website": "https://lonehaven.com/",
@@ -78,6 +80,31 @@
       "name": "IEEE",
       "website": "https://ieee.org",
       "logo": "/assets/sponsors/IEEELogo.png"
+    }
+    ,
+    {
+      "yearsActive": [
+        2026
+      ],
+      "name": "University of Ottawa",
+      "website": "https://www.uottawa.ca/",
+      "logo": "/assets/sponsors/University-of-Ottawa-Logo-Vector.svg-.png"
+    },
+    {
+      "yearsActive": [
+        2026
+      ],
+      "name": "JMTS",
+      "website": "https://www.uottawa.ca/faculty-engineering/centre-entrepreneurship-engineering-design/facilities/john-mcentrye-team-space",
+      "logo": "/assets/sponsors/jmts.jpg"
+    },
+    {
+      "yearsActive": [
+        2026
+      ],
+      "name": "CEED",
+      "website": "https://www.uottawa.ca/faculty-engineering/centre-entrepreneurship-engineering-design",
+      "logo": "/assets/sponsors/CEED logo - dark grey.png"
     }
 
   ],

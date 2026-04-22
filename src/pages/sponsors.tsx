@@ -4,8 +4,8 @@ import Footer from "@/components/Footer";
 import Head from "next/head";
 import Link from "next/link";
 
-function SponsorTicker({ sponsors }) {
-  const tickerClass = "sponsor-ticker";
+function SponsorTicker({ sponsors, slow }) {
+  const tickerClass = slow ? "sponsor-ticker-slow" : "sponsor-ticker";
   return (
     <div className="sponsor-ticker-wrapper">
       <div className={tickerClass}>
@@ -20,8 +20,11 @@ function SponsorTicker({ sponsors }) {
             <img
               src={sponsor.logo}
               alt={sponsor.name}
-              className={`max-h-16 max-w-[180px] object-contain transition-opacity hover:opacity-100 'opacity-90'`}
-              style={{ filter: "drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))" }}
+              className={`max-h-20 object-contain transition-opacity hover:opacity-100 'opacity-90'`}
+              style={{
+                filter: "drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))",
+                borderRadius: "5px",
+              }}
             />
           </a>
         ))}
@@ -30,7 +33,7 @@ function SponsorTicker({ sponsors }) {
   );
 }
 
-function SponsorSection({ title, sponsors, children }) {
+function SponsorSection({ title, sponsors, children, slow }) {
   return (
     <section
       className="py-16 px-4 relative overflow-hidden"
@@ -45,7 +48,7 @@ function SponsorSection({ title, sponsors, children }) {
           {title}
         </h2>
         {sponsors.length > 0 ? (
-          <SponsorTicker sponsors={sponsors} />
+          <SponsorTicker sponsors={sponsors} slow={slow} />
         ) : (
           <p className="text-center text-gray-500 text-lg mt-8">
             No sponsors found.
@@ -69,7 +72,7 @@ export default function Sponsors() {
     return acc;
   }, []);
 
-  const currentYear = years[0] || 2023;
+  const currentYear = years[0] || 2026;
   const currentSponsors = sponsors.filter((sponsor) =>
     sponsor.yearsActive.includes(currentYear),
   );
@@ -340,6 +343,7 @@ export default function Sponsors() {
       <SponsorSection
         title={`${currentYear} Sponsors`}
         sponsors={currentSponsors}
+        slow={false}
       >
         <svg
           className="absolute bottom-0 left-0 w-full opacity-25"
@@ -363,7 +367,11 @@ export default function Sponsors() {
 
       {/* Previous Sponsors */}
       {previousSponsors.length > 0 && (
-        <SponsorSection title="Previous Sponsors" sponsors={previousSponsors}>
+        <SponsorSection
+          title="Previous Sponsors"
+          sponsors={previousSponsors}
+          slow={true}
+        >
           <svg
             className="absolute top-0 left-0 opacity-15 pointer-events-none"
             width="60"
