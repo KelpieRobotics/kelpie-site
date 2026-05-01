@@ -32,7 +32,7 @@ function GallerySection({ year, albums }) {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <h1 className="text-2xl font-bold mb-4">{year}</h1>
+      <h1 className="text-2xl font-bold mb-4" style={{fontFamily: "Tetra-ITC"}}>{year}</h1>
       <hr className="my-4" style={{ height: "1px", borderColor: "gray" }} />
       <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {filtered.map((album) => (
@@ -53,7 +53,7 @@ export default function Home() {
         <Navbar />
         <div className="bg-white p-5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <h1 className="text-4xl md:text-5xl font-bold mt-20 text-gray-900 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold mt-20 text-gray-900 leading-tight" style={{fontFamily: "Tetra-ITC"}}>
               Gallery
             </h1>
           </div>

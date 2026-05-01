@@ -172,7 +172,7 @@
         "program": "Electrical Engineering and Computing Technology",
         "personalSite": "",
         "linkedin": "",
-        "image": "/assets/members/2025_members/isaiah_kwapisz_25.webp"
+        "image": "/assets/members/2026_members/Isaiah2026.jpg"
     },
     {
         "id": 15,
@@ -1118,13 +1118,13 @@
     {
         "id": 99,
         "yearsActive": [
-            
+            2026
         ],
         "name": "Adam Shousha",
         "program": "Computer Engineering",
         "personalSite": "",
         "linkedin": "",
-        "image": ""
+        "image": "/assets/members/2026_members/Adam2026.jpg"
     },
     {
         "id": 100,
@@ -1180,6 +1180,17 @@
         "personalSite": "",
         "linkedin": "",
         "image": "/assets/members/2026_members/Noah2026.jpg"
+    },
+    {
+        "id": 105,
+        "yearsActive": [
+            2026
+        ],
+        "name": "Rita Sfair",
+        "program": "Computer Engineering",
+        "personalSite": "",
+        "linkedin": "",
+        "image": "/assets/members/2026_members/Rita2026.jpg"
     }
     
 ]

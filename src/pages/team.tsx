@@ -1,7 +1,7 @@
 import siteConfig from "@/websiteconfig.json";
 import teamData from "@/teamData.json";
 import members from "@/members.json";
-import { useState, useCallback } from "react";
+import { useState} from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -9,7 +9,6 @@ import Head from "next/head";
 
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 import * as BsIcons from "react-icons/bs";
-import { ParagraphSection } from "@/components/Paragraph";
 
 export default function TeamMembers() {
   const teamMembers = members.teamMembers;
@@ -116,7 +115,7 @@ export default function TeamMembers() {
         >
           <div className="flex gap-3">
             <IconImport name={team.icon} />
-            <h1 className="text-3xl mb-3 text-white font-bold">{team.name}</h1>
+            <h1 className="text-5xl text-white font-bold" style={{fontFamily: "Tetra-ITC"}}>{team.name}</h1>
           </div>
           {collapsed ? (
             <BsChevronDown className="w-6 h-6 text-white" />
@@ -127,10 +126,10 @@ export default function TeamMembers() {
 
         {!collapsed && (
           <div>
-            <div>
+            <div className="mt-5">
               <ul className="text-white list-disc list-inside text-xl">
                 {team.description.map((line) => (
-                  <li key={line} className="ms-2">
+                  <li key={line} className="ms-2 mb-2">
                     {line}
                   </li>
                 ))}
@@ -232,7 +231,7 @@ export default function TeamMembers() {
         <div
           className={`relative flex flex-col items-center md:px-16 lg:px-24 pb-10`}
         >
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight" style={{fontFamily: "Tetra-ITC"}}>
             Meet Our Team
           </h1>
           <p
@@ -245,7 +244,7 @@ export default function TeamMembers() {
       <div className="bg-white p-5">
         <div className="p-4">
           {/* Text */}
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 leading-tight">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 leading-tight" style={{fontFamily: "Tetra-ITC"}}>
             About the Team
           </h2>
 
@@ -402,7 +401,7 @@ export default function TeamMembers() {
           </div>
 
           <div className="flex flex-column justify-between items-center ">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 mt-2 text-gray-900 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 mt-2 text-gray-900 leading-tight" style={{fontFamily: "Tetra-ITC"}}>
               Kelpie's {selectedYear} Subteams
             </h1>
           </div>
@@ -448,7 +447,7 @@ export default function TeamMembers() {
           ))}
         </ul>
         <div className="p-4">
-          <h2 className="text-xl my-3 text-black font-bold">
+          <h2 className="text-xl my-3 text-black font-bold" style={{fontFamily: "Tetra-ITC"}}>
             All {selectedYear} Team Members
           </h2>
           <ul className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">

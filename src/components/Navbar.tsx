@@ -18,6 +18,7 @@ const NAV_ITEMS = [
     title: 'Support',
     children: [
       { title: 'Sponsors', url: '/sponsors' },
+      { title: 'Donations', url: 'https://give.uottawa.ca/page/162055/donate/1?fund.id=EN328N' },
     ],
   },
   { title: 'Contact Us', url: '/contact-us' },
@@ -141,8 +142,9 @@ function Navbar() {
         <div className="hidden md:flex items-center gap-4">
           <Link
             href="https://give.uottawa.ca/page/162055/donate/1?fund.id=EN328N"
-            className="px-5 py-2.5 rounded-full text-sm font-semibold text-white transition-all hover:shadow-md hover:scale-105"
-            style={{ backgroundColor: '#00A99D' }}
+            className="px-5 py-2.5 rounded-full text-sm text-white transition-all hover:shadow-md hover:scale-105"
+            style={{ backgroundColor: '#00A99D', fontFamily: "Tetra-ITC"}}
+            target='_blank'
           >
             Make a Donation
           </Link>

@@ -70,7 +70,7 @@ export default function Competition() {
         />
 
         <div className={`z-10 flex flex-col items-center mt-12`}>
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold" style={{fontFamily: "Tetra-ITC"}}>
             Frequently Asked Questions
           </h1>
         </div>
@@ -78,7 +78,7 @@ export default function Competition() {
       <div className="bg-white p-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
           <div className="flex flex-col gap-1">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 leading-tight text-center">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 leading-tight text-center" style={{fontFamily: "Tetra-ITC"}}>
               General Questions
             </h2>
             <div
@@ -165,7 +165,7 @@ export default function Competition() {
             </CollapseBox>
           </div>
           <div className="flex flex-col gap-1">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 leading-tight text-center">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 leading-tight text-center" style={{fontFamily: "Tetra-ITC"}}>
               Joining the Team
             </h2>
             <div
@@ -277,7 +277,7 @@ export default function Competition() {
             </CollapseBox>
           </div>
         </div>
-        <h2 className="text-4xl md:text-4xl font-bold mb-4 text-gray-900 leading-tight text-center mt-10">
+        <h2 className="text-4xl md:text-4xl font-bold mb-4 text-gray-900 leading-tight text-center mt-10" style={{fontFamily: "Tetra-ITC"}}>
           Interested in joining our team?
         </h2>
         <div className="text-xl text-gray-600 leading-relaxed text-center">
@@ -286,6 +286,13 @@ export default function Competition() {
           <br />
           Fill in this form to be notified when our applications open in
           September!
+          <br/>
+          <br></br>
+
+          <a href="https://forms.gle/yJ7TaBth74qjybqz8" className="text-white bg-teal-600 
+          box-border border border-transparent hover:bg-teal-700 focus:ring-4 focus:ring-teal-400 
+          shadow-xs text-xl font-bold leading-5 rounded-xl text-sm px-4 py-3 focus:outline-none" target="_blank" style={{fontFamily: "Tetra-ITC"}}>Sign Up Today</a>
+
         </div>
       </div>
       <Footer />

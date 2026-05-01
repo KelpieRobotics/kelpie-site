@@ -43,7 +43,7 @@ function SponsorSection({ title, sponsors, children, slow }) {
       <div className="max-w-6xl mx-auto relative z-10">
         <h2
           className="text-2xl md:text-4xl font-bold mb-10 text-center"
-          style={{ color: "#187A72" }}
+          style={{ color: "#187A72", fontFamily: "Tetra-ITC"}}
         >
           {title}
         </h2>
@@ -115,7 +115,7 @@ export default function Sponsors() {
         <div
           className={`relative z-10 flex flex-col items-start px-8 md:px-16 lg:px-24 max-w-5xl transition-opacity duration-500 `}
         >
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight" style={{fontFamily: "Tetra-ITC"}}>
             Our Sponsors
           </h1>
           <p
@@ -315,13 +315,21 @@ export default function Sponsors() {
         </svg>
 
         <div className="max-w-4xl mx-auto text-center relative z-10">
+          <div style={{
+            position: "absolute",
+            inset: "-100px -130px",
+            backdropFilter: "blur(8px)",
+            background: "radial-gradient(ellipse 50% 50% at 50% 50%, rgb(255, 255, 255) 5%, transparent 100%)",
+            WebkitMaskImage: "radial-gradient(ellipse 50% 50% at 50% 50%, black 80%, transparent 100%)",
+            zIndex: -1,
+          }} />
           <h2
             className="text-3xl md:text-4xl font-bold mb-6"
-            style={{ color: "#187A72" }}
+            style={{ color: "#187A72", fontFamily: "Tetra-ITC", WebkitTextStroke: "2px  #ffffff", paintOrder: "stroke fill" }}
           >
             Why Partner With Us
           </h2>
-          <p className="text-lg text-gray-600 leading-relaxed mb-6">
+          <p className="text-lg text-gray-600 leading-relaxed mb-6 ">
             Kelpie Robotics is a student-led team that relies on the support of
             our sponsors to participate in the MATE ROV competition. We are
             grateful for the contributions of our sponsors, who play a crucial
@@ -336,6 +344,23 @@ export default function Sponsors() {
             media platforms and by displaying your logo on our ROV during the
             competition.
           </p>
+        </div>
+        <div className="max-w-4xl mx-auto text-center relative z-10 mt-20">
+          <h2
+            className="text-3xl md:text-4xl font-bold mb-6"
+            style={{ color: "#187A72", fontFamily: "Tetra-ITC"}}
+          >
+            A Special Thanks
+          </h2>
+          <p className="text-lg text-gray-600 leading-relaxed">
+            We are incredibly grateful for the organizations that support us at the University of Ottawa.
+            We proudly work out of the University of Ottawa’s John McEntyre (JMTS)
+            Team Space and thank them for their resources and encouragement 
+            in our journey. In addition, we thank the Centre for Entrepreneurship 
+            and Engineering Design (CEED) and the Engineering Endowment Fund (EEF) 
+            from the Faculty of Engineering for their generous support.
+          </p>
+         
         </div>
       </section>
 
@@ -498,7 +523,15 @@ export default function Sponsors() {
         </svg>
 
         <div className="max-w-4xl mx-auto text-center text-white relative z-10">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <div style={{
+            position: "absolute",
+            inset: "-50px -50px",
+            backdropFilter: "blur(8px)",
+            background: "radial-gradient(ellipse 50% 50% at 50% 50%, rgb(1, 166, 154) 10%, transparent 100%)",
+            WebkitMaskImage: "radial-gradient(ellipse 50% 50% at 50% 50%, black 80%, transparent 100%)",
+            zIndex: -1,
+          }} />
+          <h2 className="text-3xl md:text-5xl font-bold mb-6" style={{fontFamily: "Tetra-ITC"}}>
             Partner With Us
           </h2>
           <p className="text-lg md:text-xl text-white/80 mb-10 max-w-2xl mx-auto leading-relaxed">
@@ -509,13 +542,14 @@ export default function Sponsors() {
             <Link
               href="/contact-us"
               className="px-10 py-4 rounded-full font-semibold text-lg bg-white transition-all hover:shadow-lg hover:scale-105"
-              style={{ color: "#187A72" }}
+              style={{ color: "#187A72", fontFamily: "Tetra-ITC"}}
             >
               Become a Sponsor
             </Link>
             <Link
               href="https://give.uottawa.ca/page/162055/donate/1?fund.id=EN328N"
-              className="px-10 py-4 rounded-full font-semibold text-lg text-white border-2 border-white/60 transition-all hover:bg-white/10 hover:border-white"
+              target="_blank"
+              className="px-10 py-4 rounded-full font-semibold text-lg text-white border-2 border-white/60 transition-all hover:bg-white/10 hover:border-white" style={{fontFamily: "Tetra-ITC"}}
             >
               Make a Donation
             </Link>

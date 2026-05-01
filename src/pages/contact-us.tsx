@@ -80,7 +80,7 @@ const Contact = () => {
               margin: "2rem",
             }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 leading-tight" style={{fontFamily: "Tetra-ITC"}}>
               Contact Us
             </h2>
             <p className="text-gray-600 text-xl mb-10">
@@ -96,7 +96,7 @@ const Contact = () => {
                   className="bg-gray-50 rounded-2xl p-6 shadow-sm"
                   style={{ backgroundColor: "#e9f3f2" }}
                 >
-                  <h2 className="text-xl font-bold mb-4 text-gray-800">
+                  <h2 className="text-xl font-bold mb-4 text-gray-800" style={{fontFamily: "Tetra-ITC"}}>
                     Follow Us
                   </h2>
                   <div className="flex flex-wrap gap-4">
@@ -121,7 +121,7 @@ const Contact = () => {
                   className="bg-gray-50 rounded-2xl p-6 shadow-sm"
                   style={{ backgroundColor: "#e9f3f2" }}
                 >
-                  <h2 className="text-xl font-bold mb-4 text-gray-800">
+                  <h2 className="text-xl font-bold mb-4 text-gray-800" style={{fontFamily: "Tetra-ITC"}}>
                     Get In Touch
                   </h2>
                   <div className="flex flex-col gap-4 text-gray-600">
@@ -137,7 +137,7 @@ const Contact = () => {
                       </span>
                     </div>
                     <button
-                      className="mt-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors w-fit"
+                      className="mt-2 bg-teal-600 hover:bg-teal-700 text-white font- py-2 px-6 rounded-lg transition-colors w-fit" style={{fontFamily: "Tetra-ITC"}}
                       onClick={() => window.open(`mailto:${siteConfig.email}`)}
                     >
                       Send Email

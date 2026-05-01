@@ -13,7 +13,7 @@ export const Paragraph= ({data})=>{
 export function SectionTitle({children, divStyle=""}) {
   return (
     <div>
-      <div className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 leading-tight">{children}</div>
+      <div className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 leading-tight" style={{fontFamily: "Tetra-ITC"}}>{children}</div>
       <div className={`w-14 h-1 rounded-full mb-8 ${divStyle}`} style={{ backgroundColor: '#00A99D' }} />
     </div>
   )

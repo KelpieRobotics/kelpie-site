@@ -62,7 +62,7 @@
         "CTO": 1,
         "Junior": null,
         "coreMembers": [
-            81,83,97,98,100
+            81,83,97,98,100, 99
         ],
         "generalMembers": null
         },
@@ -160,7 +160,7 @@
         "CTO": 4,
         "Junior": null,
         "coreMembers": [
-            89, 90, 2, 85, 103
+            89, 90, 2, 85, 103, 105
         ],
         "generalMembers": [
             84, 44, 86, 87, 88

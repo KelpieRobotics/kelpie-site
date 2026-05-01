@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Tetra-ITC";
+  src: url("/assets/branding/Tetra ITC Std Book.otf");
+}
+@font-face {
+  font-family: "Dosis";
+  src: url("/assets/branding/Dosis-VariableFont_wght.ttf");
+}
 
 /* Hero content fade-in + slide-up on load */
 .hero-content {
@@ -85,6 +93,7 @@
 body {
   position: relative;
   overflow-x: hidden;
+  font-family: "dosis";
 }
 
 .bg-container {

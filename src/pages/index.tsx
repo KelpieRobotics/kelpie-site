@@ -1,5 +1,3 @@
-import React, { useState, useCallback } from "react";
-import siteConfig from "@/websiteconfig.json";
 import Link from "next/link";
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
@@ -41,7 +39,7 @@ function HomePage() {
         <div
           className={`relative z-10 flex flex-col items-start px-8 md:px-16 lg:px-24 max-w-5xl transition-opacity duration-500 `}
         >
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight mb-4 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight mb-4 leading-tight" style={{fontFamily: "Tetra-ITC"}}>
             Diving Deeper
             <br />
             Into Innovation
@@ -121,7 +119,7 @@ function HomePage() {
 
         {/* Bubbles - bottom left */}
         <svg
-          className="absolute bottom-8 left-10 opacity-20"
+          className="absolute bottom-8 left-10 opacity-20  z-0"
           width="60"
           height="120"
           viewBox="0 0 60 120"
@@ -137,7 +135,7 @@ function HomePage() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-16">
             {/* Left — text, ~50% */}
             <div className="w-full md:w-1/2">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 leading-tight">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 leading-tight" style={{fontFamily: "Tetra-ITC"}}>
                 Who We Are
               </h2>
               <div
@@ -227,7 +225,7 @@ function HomePage() {
 
         {/* Jellyfish - top right */}
         <svg
-          className="absolute top-6 right-10 opacity-15"
+          className="absolute top-6 right-10 opacity-15 z-0"
           width="130"
           height="200"
           viewBox="0 0 130 200"
@@ -349,15 +347,23 @@ function HomePage() {
 
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-16">
+            <div style={{
+              position: "absolute",
+              inset: "-50px -50px",
+              backdropFilter: "blur(8px)",
+              background: "radial-gradient(ellipse 50% 50% at 50% 50%, rgb(216, 243, 239) 5%, transparent 100%)",
+              WebkitMaskImage: "radial-gradient(ellipse 30% 7% at 50% 7%, black 80%, transparent 100%)",
+              zIndex: -1,
+            }} />
             <span
               className="text-sm font-semibold tracking-widest uppercase mb-4 block"
-              style={{ color: "#00A99D" }}
+              style={{ color: "#00A99D", WebkitTextStroke: "2px  #d8f3ef", paintOrder: "stroke fill" }}
             >
               Our Work
             </span>
             <h2
               className="text-3xl md:text-4xl font-bold"
-              style={{ color: "#187A72" }}
+              style={{ color: "#187A72", fontFamily: "Tetra-ITC", WebkitTextStroke: "2px  #d8f3ef", paintOrder: "stroke fill" }}
             >
               What We Do
             </h2>
@@ -513,7 +519,7 @@ function HomePage() {
       <section className="bg-white py-24 px-4 relative overflow-hidden">
         {/* Bubbles - bottom right */}
         <svg
-          className="absolute bottom-8 right-12 opacity-20"
+          className="absolute bottom-8 right-12 opacity-20  z-0"
           width="80"
           height="140"
           viewBox="0 0 80 140"
@@ -529,7 +535,7 @@ function HomePage() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-16">
             {/* Left — text */}
             <div className="w-full md:w-1/2">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 leading-tight">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 leading-tight" style={{fontFamily: "Tetra-ITC"}}>
                 The Challenge
               </h2>
               <div
@@ -615,7 +621,7 @@ function HomePage() {
 
         {/* Seaweed - top right */}
         <svg
-          className="absolute top-0 right-10 opacity-15"
+          className="absolute top-0 right-10 opacity-15  z-0"
           width="50"
           height="140"
           viewBox="0 0 50 140"
@@ -644,7 +650,7 @@ function HomePage() {
               className="flex-1 rounded-2xl p-12 flex flex-col"
               style={{ backgroundColor: "#d8f3ef" }}
             >
-              <h3 className="text-4xl font-bold mb-4 text-gray-900">Join Us</h3>
+              <h3 className="text-4xl font-bold mb-4 text-gray-900" style={{fontFamily: "Tetra-ITC"}}>Join Us</h3>
               <div
                 className="w-12 h-0.5 rounded-full mb-8"
                 style={{ backgroundColor: "#00A99D" }}
@@ -671,7 +677,7 @@ function HomePage() {
               className="flex-1 rounded-2xl p-12 flex flex-col"
               style={{ backgroundColor: "#d8f3ef" }}
             >
-              <h3 className="text-4xl font-bold mb-4 text-gray-900">
+              <h3 className="text-4xl font-bold mb-4 text-gray-900" style={{fontFamily: "Tetra-ITC"}}>
                 Support Us
               </h3>
               <div
