@@ -2,6 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Tetra-ITC";
+  src: url("/assets/branding/Tetra ITC Std Book.otf");
+}
+@font-face {
+  font-family: "Dosis";
+  src: url("/assets/branding/Dosis-VariableFont_wght.ttf");
+}
+
+/* Hero content fade-in + slide-up on load */
+.hero-content {
+  animation: heroContentIn 1s ease-out 0.3s forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes heroContentIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Sponsor horizontal rolling ticker */
+.sponsor-ticker-wrapper {
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+
+.sponsor-ticker {
+  display: flex;
+  gap: 3rem;
+  animation: sponsorScroll 35s linear infinite;
+  width: max-content;
+}
+
+
+.sponsor-ticker-slow {
+  display: flex;
+  gap: 3rem;
+  animation: sponsorScroll 50s linear infinite;
+  width: max-content;
+}
+
+.sponsor-ticker-item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1.5rem;
+  min-width: 200px;
+}
+
+@keyframes sponsorScroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -11,7 +81,7 @@
   --total-logo-width: calc(var(--total-brand) * var(--logo-width));
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,6 +93,7 @@
 body {
   position: relative;
   overflow-x: hidden;
+  font-family: "dosis";
 }
 
 .bg-container {
@@ -60,6 +131,7 @@ body {
   width: 10rem;
   height: 10rem;
 }
+
 .logo-small {
   width: 2.5rem;
   height: 2.5rem;
@@ -109,16 +181,16 @@ body {
   background-repeat: no-repeat;
   transition: background-size .5s ease-in-out;
   background-image: linear-gradient(transparent, transparent), linear-gradient(#187A72, #00A99D)
-
 }
 
 .link-underline:hover {
   background-size: 100% 4px;
   background-position: 0 100%;
- 
+
 }
-.links:hover{
-  cursor:pointer;
+
+.links:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 640px) {
@@ -126,11 +198,12 @@ body {
     width: 6rem;
     height: 6rem;
   }
+
   .title {
     font-size: 2rem;
     text-align: center;
   }
-  
+
   .subtitle {
     font-size: 1rem;
     text-align: center;
@@ -141,7 +214,7 @@ body {
     align-items: center;
     margin-top: 1 rem;
   }
-  
+
   .links a {
     margin: 0.rem;
   }
@@ -149,24 +222,26 @@ body {
 
 /* GALLERY */
 
-  .album-card {
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .album-card:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   
-  }
+.album-card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.album-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
 
 
 @keyframes float {
   0% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-20px);
   }
+
   100% {
     transform: translateY(0px);
   }
@@ -222,14 +297,14 @@ body {
 /* Styles for the paragraph compoenent */
 
 .paragraph {
-  white-space:pre-line;
+  white-space: pre-line;
   text-align: justify;
   text-justify: inter-word;
   /* font-family: 'Times New Roman', Times, serif; */
   padding: 2px;
 }
 
-.scroller{
+.scroller {
   display: grid;
   grid-auto-flow: column;
   /* grid-template-columns: 1fr 1fr; */
@@ -262,10 +337,12 @@ body {
   from {
     transform: translateX(0);
   }
+
   to {
-    transform: translateX(calc(-100% - 0.25rem));/*0.25 is the gap defined for .scroller. If changed, change it here too */
+    transform: translateX(calc(-100% - 0.25rem));
+    /*0.25 is the gap defined for .scroller. If changed, change it here too */
   }
-  
+
 }
 
 .item {
@@ -280,10 +357,6 @@ body {
 
 }
 
-.item:hover{
+.item:hover {
   transform: scale(0.9);
 }
-
-
-
-
