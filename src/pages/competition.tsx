@@ -52,16 +52,20 @@ export default function Competition() {
             <div className="text-center">
             <SectionTitle divStyle="mx-auto">What is the MATE ROV Competition?</SectionTitle></div>
             <SectionText>
-              The MATE ROV Competition is a global event where student-led
+              The <a  className="text-teal-600 underline hover:text-teal-800 visited:text-teal-700" href="https://materovcompetition.org/"
+              target="_blank"
+              rel="noopener noreferrer">
+             MATE ROV Competition
+            </a> is a global event where student-led
               teams design remotely operated underwater vehicles (ROVs) to
               complete a variety of tasks. The competition's challenges
               encourage students to build skills in engineering, electronics,
-              physics, and math. Students from grades K–12, college, and
+              physics, and math, as well as learning hands-on technical skills and real world applications of robotics.
+               Students from grades K–12, college, and
               university are eligible to participate.
               <br />
               <br />
-              Kelpie Robotics is proud to be participating in the Explorer
-              class of the MATE ROV competition.
+              As we university team, Kelpie Robotics it proud to participate in the Explorer Class of the MATE ROV competition.
             </SectionText>
           </div>
           <div className="flex-shrink-0 w-full md:w-56 lg:w-64">
@@ -83,14 +87,15 @@ export default function Competition() {
         </div>
 
         {/* Location */}
-        <div className="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+        <div className="flex flex-col md:flex-row-reverse md:items-stretch gap-8 md:gap-12">
           <div className="flex-1 min-w-0">
             <div className="text-center">
-            <SectionTitle divStyle="mx-auto">Location</SectionTitle></div>
+              <SectionTitle divStyle="mx-auto">Location</SectionTitle>
+            </div>
             <SectionText>
-              The MATE ROV World Championships take place each year in June.
-              Schools across many countries participate in the competition,
-              and each year the competition changes locations.
+              The <a className="text-teal-600 underline hover:text-teal-800 visited:text-teal-700" href="https://materovcompetition.org/world-championship" target="_blank" rel="noopener noreferrer">MATE ROV World Championships</a> take place each year in June.
+              The World Championships showcase the top 60 robotics teams from 20 countries around the world.
+              The location changes in each year which challenges reflecting real marine robotics issues facing the host region.
               <br />
               <br />
               In past years Kelpie has competed in:
@@ -101,28 +106,23 @@ export default function Competition() {
               <li>Alpena, Michigan — 2025</li>
             </ul>
             <SectionText>
-              In 2026 the competition will be held in St. John's, Newfoundland.
-              This marks Kelpie's 5th season and third time competing at the
-              MATE ROV World Championships.
+              The 2026 World Championships will be held in St. John's, Newfoundland and Labrador June 25-27, marking Kelpie's fourth time competing.
             </SectionText>
           </div>
-          <div className="flex-shrink-0 w-full md:w-72 lg:w-80">
+
+          <div className="w-full flex-1 aspect-video md:aspect-auto relative overflow-hidden rounded-xl">
             <Link
               href="https://materovcompetition.org/world-championship"
               target="_blank"
               rel="noopener noreferrer"
+              className="block h-full hover:opacity-90 transition-opacity"
             >
-              <div
-                className="relative h-48 md:h-52 w-full overflow-hidden hover:opacity-90 transition-opacity"
-                style={{ borderRadius: "12px" }}
-              >
-                <Image
-                  src="/assets/branding/view-of-st-johns-from-battery-hotel_800.jpg"
-                  alt="St. John's Newfoundland"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              <Image
+                src="/assets/branding/view-of-st-johns-from-battery-hotel_800.jpg"
+                alt="St. John's Newfoundland"
+                fill
+                className="object-cover"
+              />
             </Link>
           </div>
         </div>
@@ -186,12 +186,10 @@ export default function Competition() {
               className="relative w-full overflow-hidden"
               style={{ paddingBottom: "56.25%", borderRadius: "16px" }}
             >
-              <iframe
-                className="absolute inset-0 w-full h-full"
-                src="https://www.youtube.com/embed/WIGB4HGzLF8"
-                frameBorder="0"
-                allowFullScreen
-              />
+              <video controls width="100%">
+                <source src="/assets/branding/Kelpie_Recap.mp4" type="video/mp4"></source>
+              </video>
+              
             </div>
           </div>
         </div>
