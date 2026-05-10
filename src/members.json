@@ -227,7 +227,7 @@
             2026
         ],
         "name": "Leo Dionne",
-        "program": "Physics and Electrical Engineering",
+        "program": "Electrical and Physics Engineering",
         "personalSite": "",
         "linkedin": "",
         "image": "/assets/members/2026_members/Leo2026.jpg"
@@ -475,7 +475,8 @@
         "id": 41,
         "yearsActive": [
             2024,
-            2025
+            2025,
+            2026
         ],
         "name": "Mathis Barrette",
         "program": "Computer Engineering",
@@ -954,7 +955,6 @@
     {
         "id": 84,
         "yearsActive": [
-            2026
         ],
         "name": "Ismaël Traore",
         "program": "Bachelor of Commerce and Marketing",
@@ -968,7 +968,7 @@
             2026
         ],
         "name": "Cecilia Gil-Flores",
-        "program": "Bachelor of Commerce and Marketing",
+        "program": "Commerce and Marketing",
         "personalSite": "",
         "linkedin": "",
         "image": "/assets/members/2026_members/Cecilia2026.jpg"
@@ -979,7 +979,7 @@
             2026
         ],
         "name": "Mikail Ahmed",
-        "program": "",
+        "program": "Computer Science",
         "personalSite": "",
         "linkedin": "",
         "image": "/assets/members/2026_members/Mikail2026.jpg"
@@ -1060,27 +1060,6 @@
         "personalSite": "",
         "linkedin": "",
         "image": "/assets/members/2026_members/Kishaan2026.jpg"
-    },
-    {
-        "id": 94,
-        "yearsActive": [
-            2026
-        ],
-        "name": "Mostafa Abdelaal",
-        "program": "",
-        "personalSite": "",
-        "linkedin": "",
-        "image": ""
-    },
-    {
-        "id": 95,
-        "yearsActive": [
-        ],
-        "name": "Samy",
-        "program": "Mechanical Engineering",
-        "personalSite": "",
-        "linkedin": "",
-        "image": ""
     },
     {
         "id": 96,

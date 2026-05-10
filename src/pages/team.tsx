@@ -70,12 +70,12 @@ export default function TeamMembers() {
     return (
       <div className="rounded-xl overflow-hidden bg-white shadow-lg flex flex-row items-center justify-start h-full">
         {member.image && (
-          <div className="relative w-24 h-24 flex-shrink-0">
+          <div className="relative w-24 self-stretch min-h-24 flex-shrink-0" style={{ minHeight: "6rem" }}>
             <Image
               src={member.image}
               alt={member.name}
               fill
-              className="object-cover rounded-xl border-4"
+              className="object-cover rounded-xl border-2"
               style={{ borderColor: "#d8f3ef" }}
             />
           </div>
@@ -88,19 +88,6 @@ export default function TeamMembers() {
             <h3 className="text-black">{member.program}</h3>
           </div>
         </div>
-
-        {/* <div className='flex-auto'>
-          {member.personalSite && (
-            <a href={member.personalSite} className="text-blue-500 mr-2" target="_blank" rel="noopener noreferrer">
-              Personal Website
-            </a>
-          )}
-          {member.linkedin && (
-            <a href={member.linkedin} className="text-blue-500" target="_blank" rel="noopener noreferrer">
-              LinkedIn
-            </a>
-          )}
-        </div> */}
       </div>
     );
   };
@@ -127,22 +114,37 @@ export default function TeamMembers() {
         {!collapsed && (
           <div>
             <div className="mt-5">
-              <ul className="text-white list-disc list-inside text-xl">
+              {team.description.length === 1 ? (
+                <p className="text-white text-2xl ms-3">{team.description[0]}</p>
+              ) : (
+                <ul className="text-white list-disc list-inside text-2xl">
                 {team.description.map((line) => (
                   <li key={line} className="ms-2 mb-2">
                     {line}
                   </li>
                 ))}
               </ul>
+              )}
+              
             </div>
             <div className=" rounded-xl p-5 mt-4 bg-teal-700">
               <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
                 {team.yearsData.CTO && (
                   <div>
-                    <h2 className="text-xl mb-3 text-white font-bold">CTO</h2>
+                    <h2 className="text-xl mb-3 text-white font-bold">Chief Technology Officer</h2>
                     <div className="flex flex-col gap-3">
                       <MemberTemplate
                         member={getMemberById(team.yearsData.CTO)}
+                      ></MemberTemplate>
+                    </div>
+                  </div>
+                )}
+                {team.yearsData.CCO && (
+                  <div>
+                    <h2 className="text-xl mb-3 text-white font-bold">Chief Operating Officer</h2>
+                    <div className="flex flex-col gap-3">
+                      <MemberTemplate
+                        member={getMemberById(team.yearsData.CCO)}
                       ></MemberTemplate>
                     </div>
                   </div>
@@ -159,6 +161,16 @@ export default function TeamMembers() {
                     </div>
                   </div>
                 )}
+                {team.yearsData.publicRelations && (
+                  <div>
+                    <h2 className="text-xl mb-3 text-white font-bold">Public Relations Officer</h2>
+                    <div className="flex flex-col gap-3">
+                      <MemberTemplate
+                        member={getMemberById(team.yearsData.publicRelations)}
+                      ></MemberTemplate>
+                    </div>
+                  </div>
+                )}
               </div>
               <div className="flex flex-col gap-4">
                 {team.yearsData.coreMembers && (
@@ -166,7 +178,7 @@ export default function TeamMembers() {
                     <h2 className="text-xl my-3 text-white font-bold">
                       Core Members
                     </h2>
-                    <ul className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+                    <ul className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                       {getMembersByIds(team.yearsData.coreMembers)
                         .sort((a, b) => sortClosure(a, b))
                         .map((member) => (
@@ -182,7 +194,7 @@ export default function TeamMembers() {
                     <h2 className="text-xl my-3 text-white font-bold">
                       General Members
                     </h2>
-                    <ul className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+                    <ul className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                       {getMembersByIds(team.yearsData.generalMembers)
                         .sort((a, b) => sortClosure(a, b))
                         .map((member) => (
@@ -235,13 +247,13 @@ export default function TeamMembers() {
             Meet Our Team
           </h1>
           <p
-            className={`text-lg text-center mx-2 text-gray-300 max-w-2xl opacity-100 translate-y-0 opacity-0 translate-y-4`}
+            className={`text-2xl text-center mx-2 text-gray-300 max-w-2xl opacity-100 translate-y-0 opacity-0 translate-y-4`}
           >
             A community of students dedicated to learning and problem-solving.
           </p>
         </div>
       </section>
-      <div className="bg-white p-5">
+      <div className="bg-white max-w-7xl mx-auto px-6 md:px-10 lg:px-8 py-12 flex flex-col gap-10">
         <div className="p-4">
           {/* Text */}
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 leading-tight" style={{fontFamily: "Tetra-ITC"}}>
@@ -254,7 +266,7 @@ export default function TeamMembers() {
             style={{ backgroundColor: "#00A99D" }}
           />
           <div className="flex">
-            <div className="text-lg text-gray-600 leading-relaxed">
+            <div className="text-2xl text-gray-600 leading-relaxed">
               <div>
                 <p>
                   "Kelpie Robotics was founded in 2022 by a group of passionate
@@ -276,7 +288,7 @@ export default function TeamMembers() {
             </div>
 
             {/* Decoration */}
-            <div className="justify-center items-center p-2">
+            <div className="absolute" style={{top: "450px", right: "40px"}}>
               <svg
                 className="opacity-15"
                 width="130"
@@ -401,7 +413,7 @@ export default function TeamMembers() {
           </div>
 
           <div className="flex flex-column justify-between items-center ">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 mt-2 text-gray-900 leading-tight" style={{fontFamily: "Tetra-ITC"}}>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 mt-14 text-gray-900 leading-tight" style={{fontFamily: "Tetra-ITC"}}>
               Kelpie's {selectedYear} Subteams
             </h1>
           </div>
@@ -410,7 +422,7 @@ export default function TeamMembers() {
             style={{ backgroundColor: "#00A99D" }}
           />
           <div className="flex flex-column justify-between flex-wrap gap-2">
-            <p className="text-lg text-gray-600">
+            <p className="text-2xl text-gray-600">
               To maintain efficiency and specialization, the team is divided
               into five sub-teams, each focusing on a core area of the project:
             </p>

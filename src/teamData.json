@@ -3,20 +3,17 @@
     {
     "name": "Mechanical Team",
     "icon": "BsGear",
-    "description": ["Create the physical housing for the ROV and vertical profiling float.",
-        "Design, fabricate, build, and test the frame and tools needed to complete missions.",
-        "Operate SOLIDWORKS to design all components.",
-        "Fabricate in house at the machine shop oncampus or via 3D printing."],
+    "description": ["The Mechanical Team is responsible for designing and constructing the physical structure of the ROV and its vertical profiling float. This includes the vehicle frame, buoyancy, internal housing, and all mission-specific tools required to complete competition tasks. Using SOLIDWORKS, the team designs each component from the ground up, focusing on strength, modularity, and ease of maintenance. Parts are fabricated in-house through a combination of campus machine shop manufacturing and advanced 3D printing, allowing for rapid prototyping, iteration, and precise customization."],
     "yearsData": [
         {
         "year": 2026,
         "CTO": 4,
         "Junior": 8,
         "coreMembers": [
-            89, 90, 92, 93, 9
+            89, 90, 92, 93, 91
         ],
         "generalMembers": [
-            91, 7, 95, 94
+            7, 95, 94, 9 
         ]
         },
         {
@@ -51,11 +48,56 @@
     ]
     },
     {
+    "name": "Electrical Team",
+    "icon": "BsPlug",
+    "description": ["The Electrical Team designs and builds the complete onboard electrical systems that power the ROV and vertical profiling float. Power from the surface is brought to the ROV through a long tether and connects to the electronics housed on the ROV in a watertight enclosure. The team develops custom circuit boards using Altium, including power distribution, motor and servo control, and sensor interfaces. Each board is carefully planned, designed, assembled, and tested in-house to create a compact, efficient, and dependable electrical system."],
+    "yearsData": [
+        {
+        "year": 2026,
+        "CTO": 14,
+        "Junior": 19,
+        "coreMembers": [
+            81, 83, 18, 79, 41
+        ],
+        "generalMembers": [
+            76, 20, 80, 104
+        ]
+        },
+        {
+        "year": 2025,
+        "CTO": null,
+        "Junior": null,
+        "coreMembers": [
+            3, 15, 16, 17, 14, 18, 19, 20
+        ],
+        "generalMembers": [
+            21, 22, 23
+        ]
+        },
+        {
+        "year": 2024,
+        "CTO": null,
+        "Junior": 3,
+        "coreMembers": [
+            24, 19, 67, 22, 14, 17
+        ],
+        "generalMembers": null
+        },
+        {
+        "year": 2023,
+        "CTO": 52,
+        "Junior": null,
+        "coreMembers": [
+            49, 50, 58, 24
+        ],
+        "generalMembers": null
+        }
+    ]
+    },
+    {
     "name": "Software Team",
     "icon": "BsRouter",
-    "description": ["Create the code for vehicle motion, tool operation, and communication between onboard electronics and the surface control.",
-"Design and maintain the operator interface, providing real-time camera feeds, sensor data, and intuitive controls.",
-"Create data analysis and automation tools tailored to the specific challenges of the MATE ROV Competition, ensuring precise control and informed decision-making during missions."],
+    "description": ["The Software Team develops the code that integrates all subsystems and brings the ROV and vertical profiling float to life. They program vehicle motion, tool operation, and communication between onboard electronics and the surface control station. The team also designs and maintains the operator interface, providing real-time camera feeds, sensor data, and intuitive controls. In addition, they create data analysis and automation tools tailored to the specific challenges of the competition, ensuring precise control and informed decision-making during missions."],
     "yearsData": [
         {
         "year": 2026,
@@ -98,72 +140,19 @@
     ]
     },
     {
-    "name": "Electrical Team",
-    "icon": "BsPlug",
-    "description": ["Design and build the onboard electrical system for the ROV and float, housed within a watertight enclosure.",
-"Create custom Altium-designed circuit boards for power, motor, servo, and sensor control.",
-"In-house planning, design, and assembly of PCB to ensure a compact and dependable system."],
-    "yearsData": [
-        {
-        "year": 2026,
-        "CTO": 14,
-        "Junior": 19,
-        "coreMembers": [
-            81, 83, 104
-        ],
-        "generalMembers": [
-            76, 20, 79, 80, 18
-        ]
-        },
-        {
-        "year": 2025,
-        "CTO": null,
-        "Junior": null,
-        "coreMembers": [
-            3, 15, 16, 17, 14, 18, 19, 20
-        ],
-        "generalMembers": [
-            21, 22, 23
-        ]
-        },
-        {
-        "year": 2024,
-        "CTO": null,
-        "Junior": 3,
-        "coreMembers": [
-            24, 19, 67, 22, 14, 17
-        ],
-        "generalMembers": null
-        },
-        {
-        "year": 2023,
-        "CTO": 52,
-        "Junior": null,
-        "coreMembers": [
-            49, 50, 58, 24
-        ],
-        "generalMembers": null
-        }
-    ]
-    },
-    {
     "name": "Logistics Team",
     "icon": "BsFileEarmarkRuled",
-    "description": ["Secure and maintain sponsorships.",
-"Manage marketing and outreach initiatives.",
-"Lead fundraising efforts.",
-"Coordinate workshops, and organize team-bonding activities.",
-"Drive social outreach, community service, and engagement initiatives that reflect commitment to corporate social responsibility (CSR) and STEM promotion."],
+    "description": ["The Logistics Team is the backbone of Kelpie Robotics’ operations and external presence. This team is responsible for securing and maintaining sponsorships, managing marketing and outreach initiatives, and representing Kelpie Robotics to partners, stakeholders, and the broader community. They lead fundraising efforts, coordinate workshops, and organize team-building activities that strengthen collaboration and culture within the team. Beyond internal operations, the Logistics Team drives social outreach, community service, and engagement initiatives that reflect our commitment to giving back and promoting STEM. Through clear documentation, professional representation, and effective communication, the Logistics Team ensures Kelpie Robotics operates smoothly, sustainably, and with a strong public identity."],
     "yearsData": [
         {
         "year": 2026,
-        "CTO": 4,
-        "Junior": null,
+        "CCO": 4,
+        "publicRelations": 85,
         "coreMembers": [
-            89, 90, 2, 85, 103, 105
+            89, 103, 105, 88
         ],
         "generalMembers": [
-            84, 44, 86, 87, 88
+            44, 86, 87, 90
         ]
         },
         {

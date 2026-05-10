@@ -105,6 +105,14 @@
       "name": "CEED",
       "website": "https://www.uottawa.ca/faculty-engineering/centre-entrepreneurship-engineering-design",
       "logo": "/assets/sponsors/CEED logo - dark grey.png"
+    },
+    {
+      "yearsActive": [
+        2026
+      ],
+      "name": "ASI Group",
+      "website": "https://asi-group.com/",
+      "logo": "/assets/sponsors/ASI.png"
     }
 
   ],
