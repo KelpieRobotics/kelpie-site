@@ -328,8 +328,7 @@
         "id": 28,
         "yearsActive": [
             2024,
-            2025,
-            2026
+            2025
         ],
         "name": "Aaditya Shah",
         "program": "Computer Engineering",
@@ -1123,17 +1122,6 @@
         ],
         "name": "Sara Ahuja",
         "program": "Computer Science and Mathematics",
-        "personalSite": "",
-        "linkedin": "",
-        "image": ""
-    },
-    {
-        "id": 102,
-        "yearsActive": [
-            2026
-        ],
-        "name": "Valdez Tessa",
-        "program": "Génie électrique et technologie de l’informatique",
         "personalSite": "",
         "linkedin": "",
         "image": ""

@@ -65,7 +65,7 @@ export default function Competition() {
               university are eligible to participate.
               <br />
               <br />
-              As we university team, Kelpie Robotics it proud to participate in the Explorer Class of the MATE ROV competition.
+              As we are an university team, Kelpie Robotics it proud to participate in the Explorer Class of the MATE ROV Competition.
             </SectionText>
           </div>
           <div className="flex-shrink-0 w-full md:w-56 lg:w-64">
@@ -129,28 +129,40 @@ export default function Competition() {
 
 
         {/* Marine Conservation */}
-        <div className="flex flex-col items-center text-center gap-4">
-          <SectionTitle divStyle="mx-auto">Marine Conservation</SectionTitle>
-          <SectionText>
-            Kelpie’s mission aligns with the MATE program alongside the United Nations’ Decade of Action for Cryospheric Sciences 
-            that emphasizes the importance of ecology in marine ecosystems.
-            <br/><br/>
-            Through developing technologies, such as ROVs, marine ecosystems can be mointored and maintaned safety 
-            and responsibly to aid in conservation efforts. Kelpie's goal is to do create a prototype ROV to do just that!
-            <br/><br/>
-            Our ROV is built with sustainability in mind. The majoirty of our componets are reused year to 
-            year and other materials are reposed or recyled after use, reducing our environmental footprint. 
-            It is also build with marine life in mind, with operation causing no ecological harm and minized distrubance.
-            <br/><br/>
-            We back our environmental promise by promoting marine conservation by educating our members during 
-            conferences and sharing our acquired knowledge in our events and on our social media platforms. 
-            We also take part in knowledge transfer by encouraging our community to partake in responsible 
-            consumption and participate in ecological protection. 
-            <br/><br/>
-            By implementing environmentally responsible practices, Kelpie Robotics encourages the development 
-            of technological solutions and increases awareness on the importance of the protection 
-            of marine environments for a greener future.
-          </SectionText>
+    <div className="flex flex-col items-center text-center gap-4">
+      <SectionTitle divStyle="mx-auto">Marine Conservation</SectionTitle>
+
+      <div className="w-full text-left">
+        <div className="float-right ml-8 mb-4 w-full md:w-1/2 aspect-video relative rounded-xl overflow-hidden">
+          <Image
+            src="/assets/branding/garbage.jpg"
+            alt="Trash Collection"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <SectionText >
+          Kelpie's mission aligns with the MATE program alongside the United Nations' Decade of Action for Cryospheric Sciences 
+          that emphasizes the importance of ecology in marine ecosystems.
+          <br/><br/>
+          Through developing technologies, such as ROVs, marine ecosystems can be monitored and maintained safely 
+          and responsibly to aid in conservation efforts. Kelpie's goal is to create a prototype ROV to do just that!
+          <br/><br/>
+          Our ROV is built with sustainability in mind. The majority of our components are reused year to 
+          year and other materials are repurposed or recycled after use, reducing our environmental footprint. 
+          It is also built with marine life in mind, with operation causing no ecological harm and minimized disturbance.
+          <br/><br/>
+          We back our environmental promise by promoting marine conservation by educating our members during 
+          conferences and sharing our acquired knowledge in our events and on our social media platforms. 
+          We also take part in knowledge transfer by encouraging our community to partake in responsible 
+          consumption and participate in ecological protection.
+          <br/><br/>
+          By implementing environmentally responsible practices, Kelpie Robotics encourages the development 
+          of technological solutions and increases awareness on the importance of the protection 
+          of marine environments for a greener future.
+        </SectionText>
+      </div>
+
 
           {/* Jellyfish SVG */}
           <svg
@@ -177,25 +189,26 @@ export default function Competition() {
             <path d="M108 38 C110 48, 106 54, 109 64" stroke="#187A72" strokeWidth="1.5" fill="none" strokeLinecap="round" />
             <path d="M116 37 C118 46, 115 52, 117 60" stroke="#00A99D" strokeWidth="1.5" fill="none" strokeLinecap="round" />
           </svg>
-        </div>
 
-        {/* Video */}
-        <div className="w-full flex justify-center">
-          <div className="w-full max-w-3xl">
-            <div
-              className="relative w-full overflow-hidden"
-              style={{ paddingBottom: "56.25%", borderRadius: "16px" }}
-            >
-              <video controls width="100%">
-                <source src="/assets/branding/Kelpie_Recap.mp4" type="video/mp4"></source>
-              </video>
-              
-            </div>
+         {/* Video */}
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="relative w-full aspect-video">
+            <iframe
+              src="https://drive.google.com/file/d/16rSpMKMHPLb5MpDgKibIU7CYThxEM62g/preview"
+              className="absolute inset-0 w-full h-full rounded-xl"
+              allowFullScreen
+            />
+          </div>
+          <div className="relative w-full aspect-video">
+            <iframe
+              className="absolute inset-0 w-full h-full rounded-xl"
+              src="https://www.youtube.com/embed/WIGB4HGzLF8"
+              allowFullScreen
+            />
           </div>
         </div>
-
+        </div>
       </div>
-
       <Footer />
     </div>
   );

@@ -85,12 +85,15 @@ export default function Competition() {
               className={`w-14 h-1 rounded-full mb-8 mx-auto`}
               style={{ backgroundColor: "#00A99D" }}
             />
-            <CollapseBox>
-              <FAQTitle>Why should I join the team?</FAQTitle>
+             <CollapseBox>
+              <FAQTitle>
+                What are you seeking to improve about your next competitions or
+                robot builds?
+              </FAQTitle>
               <FAQText>
-                Joining the team gives you hands-on experience that goes beyond
-                what you learn in class. You’ll develop practical
-                interdisciplinary skills and grow your network at no cost.
+                For this year’s 2026 competition, we’re aiming for a smaller
+                frame to improve stability, increase our involvement with the
+                community and expand our outreach efforts.
               </FAQText>
             </CollapseBox>
             <CollapseBox>
@@ -106,18 +109,19 @@ export default function Competition() {
                   <li>Longmont, Colorado in 2023</li>
                   <li>Alpena, Michigan in 2025</li>
                 </ul>
-                This year we are headed to St. John’s, Newfoundland
+                This year we are headed to St. John’s, Newfoundland.
               </FAQText>
             </CollapseBox>
+    
             <CollapseBox>
               <FAQTitle>
                 What makes Kelpie different from other competitive teams at
                 uOttawa?
               </FAQTitle>
               <FAQText>
-                Kelpie isn’t just a competitive engineering team, we pride
-                ourselves on our corporate responsibility to our community,
-                sharing our knowledge and helping the environment.
+                Kelpie isn’t just a competitive engineering team, 
+                we pride ourselves on our corporate responsibility, 
+                doing good onto the community and  environment.
                 <br />
                 <br />
                 We are the only team which has a business component to our
@@ -128,7 +132,7 @@ export default function Competition() {
                 We are only one of the few competitive engineering teams at
                 uOttawa with a software team, providing experience to students
                 in software engineering, computer engineering and computer
-                science!
+                science.
               </FAQText>
             </CollapseBox>
             <CollapseBox>
@@ -152,17 +156,7 @@ export default function Competition() {
                 events a few times per semester.
               </FAQText>
             </CollapseBox>
-            <CollapseBox>
-              <FAQTitle>
-                What are you seeking to improve about your next competitions or
-                robot builds?
-              </FAQTitle>
-              <FAQText>
-                For this year’s 2026 competition, we’re aiming for a smaller
-                frame to improve stability, increase our involvement with the
-                community and expand our outreach efforts.
-              </FAQText>
-            </CollapseBox>
+    
           </div>
           <div className="flex flex-col gap-1">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 leading-tight text-center" style={{fontFamily: "Tetra-ITC"}}>
@@ -172,6 +166,14 @@ export default function Competition() {
               className={`w-14 h-1 rounded-full mb-8 mx-auto`}
               style={{ backgroundColor: "#00A99D" }}
             />
+            <CollapseBox>
+              <FAQTitle>Why should I join the team?</FAQTitle>
+              <FAQText>
+                Joining the team gives you hands-on experience that goes beyond
+                what you learn in class. You’ll develop practical
+                interdisciplinary skills and grow your network at no cost.
+              </FAQText>
+            </CollapseBox>
             <CollapseBox>
               <FAQTitle>
                 What sort of skills could I gain from working with Kelpie?
@@ -187,7 +189,10 @@ export default function Competition() {
                 <ul className="list-disc pl-5 py-2 ms-4">
                   <li>3D modelling and simulation with SolidWorks</li>
                   <li>
-                    3D printing and manufacturing techniques (mill, lath, drill
+                    3D printing
+                  </li>
+                  <li>
+                    Manufacturing techniques (mill, lathe, drill
                     press, etc)
                   </li>
                 </ul>
@@ -216,7 +221,7 @@ export default function Competition() {
               <FAQText>
                 Yes! We love interdisciplinary members. When you are accepted to
                 the team for the year, you will be assigned to a main subteam
-                and will be expected to fulfil your main tasks there, however if
+                and will be expected to fulfill your main tasks there, however if
                 you have time then you are welcome to help the other subteams.
                 Plus, you can change your subteam year to year, if you would
                 like.
@@ -247,12 +252,19 @@ export default function Competition() {
               <FAQText>
                 A general understanding of English is required to join the team
                 since the competition is only in English. Speaking French as
-                well is an asset for outreach and marketing! When does the team
-                meet? The team meets for a few hours on weekends, but most work
+                well is an asset for outreach and marketing!
+              </FAQText>
+            </CollapseBox>
+            <CollapseBox>
+            <FAQTitle>
+               When does the team meet?
+            </FAQTitle>
+            <FAQText>
+               The team meets for a few hours on weekends, but most work
                 happens on your own time. As the competition approaches, the
                 workload increases, and we hold more meetings in smaller groups
                 to meet deadlines.
-              </FAQText>
+            </FAQText>
             </CollapseBox>
             <CollapseBox>
               <FAQTitle>How many hours a week do I commit? </FAQTitle>
@@ -270,9 +282,9 @@ export default function Competition() {
             <CollapseBox>
               <FAQTitle>What’s the team culture like? </FAQTitle>
               <FAQText>
-                The team culture is friendly and welcoming. We’re relaxed but
-                driven, focused on learning, and we like to have fun throughout
-                the year.
+                The team culture is friendly and welcoming. We're driven and focused on learning,
+                while also keeping a relaxed atmosphere with room for fun!
+                
               </FAQText>
             </CollapseBox>
           </div>

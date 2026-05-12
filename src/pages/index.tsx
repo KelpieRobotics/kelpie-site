@@ -663,7 +663,8 @@ function HomePage() {
               </p>
               <div>
                 <Link
-                  href="/contact-us"
+                  href="https://forms.gle/yJ7TaBth74qjybqz8"
+                  target="_blank"
                   className="inline-block px-8 py-3 rounded-full font-semibold text-white transition-all hover:shadow-lg hover:scale-105"
                   style={{ backgroundColor: "#187A72" }}
                 >

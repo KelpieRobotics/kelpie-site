@@ -266,15 +266,15 @@ export default function TeamMembers() {
             style={{ backgroundColor: "#00A99D" }}
           />
           <div className="flex">
-            <div className="text-2xl text-gray-600 leading-relaxed">
+            <div className="text-xl text-gray-600 leading-relaxed">
               <div>
                 <p>
-                  "Kelpie Robotics was founded in 2022 by a group of passionate
+                  Kelpie Robotics was founded in 2022 by a group of passionate
                   engineering students at the University of Ottawa. At the
                   forefront of this initiative was our current CEO, Juan Hiedra
                   Primera, who sought to create a hands-on environment where
                   students could apply their technical knowledge to real-world
-                  ocean challenges through robotics."
+                  ocean challenges through robotics.
                 </p>
                 <br />
                 <p>
@@ -422,9 +422,9 @@ export default function TeamMembers() {
             style={{ backgroundColor: "#00A99D" }}
           />
           <div className="flex flex-column justify-between flex-wrap gap-2">
-            <p className="text-2xl text-gray-600">
+            <p className="text-xl text-gray-600">
               To maintain efficiency and specialization, the team is divided
-              into five sub-teams, each focusing on a core area of the project:
+              into sub-teams, each focusing on a core area of the project:
             </p>
             <div>
               <label

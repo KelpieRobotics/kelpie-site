@@ -3,6 +3,7 @@ import Link from "next/link";
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import TemplatePage from "@/reusable/TemplatePage";
+import Footer from "@/components/Footer";
 
 // AlbumCard.jsx
 function AlbumCard({ album }) {
@@ -62,6 +63,7 @@ export default function Home() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
