@@ -59,7 +59,7 @@ function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 shrink-0">
-          <Image src="/assets/branding/Copy of logo_color.svg" alt="Kelpie Robotics" width={100} height={100} />
+          <Image src="/assets/branding/Copy of logo_color.svg" alt="Kelpie Robotics" width={100} height={50} style={{ width: 100, height: 50 }} priority />
         </Link>
 
         {/* Desktop nav */}
@@ -171,7 +171,7 @@ function Navbar() {
             {/* Header row */}
             <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100">
               <Link href="/" onClick={() => setMenuOpen(false)}>
-                <Image src="/assets/branding/Copy of logo_color.svg" alt="Kelpie Robotics" width={60} height={60} />
+                <Image src="/assets/branding/Copy of logo_color.svg" alt="Kelpie Robotics" width={60} height={60} style={{ width: 60, height: 60 }} />
               </Link>
               <button onClick={() => setMenuOpen(false)} className="p-2 text-gray-600" aria-label="Close menu">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

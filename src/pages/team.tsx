@@ -227,7 +227,7 @@ export default function TeamMembers() {
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: "url('/assets/branding/Good Full team.jpg')",
+            backgroundImage: "url('/assets/branding/Good Full team.JPG')",
             backgroundSize: "cover",
             backgroundPosition: "30% 40%",
           }}

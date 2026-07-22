@@ -115,7 +115,7 @@ export default function Competition() {
               href="https://materovcompetition.org/world-championship"
               target="_blank"
               rel="noopener noreferrer"
-              className="block h-full hover:opacity-90 transition-opacity"
+              className="relative block h-full hover:opacity-90 transition-opacity"
             >
               <Image
                 src="/assets/branding/view-of-st-johns-from-battery-hotel_800.jpg"

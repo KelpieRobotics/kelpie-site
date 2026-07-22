@@ -52,7 +52,7 @@ function GalleryViewer({ gallery }) {
     return (
       <div>
         <Head>
-          <title>{gallery.name} | Kelpie Robotics</title>
+          <title>{`${gallery.name} | Kelpie Robotics`}</title>
         </Head>
         <Navbar />
 

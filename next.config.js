@@ -2,10 +2,10 @@ module.exports = {
   output: "export",
   reactStrictMode: true,
   images: {
-    domains: [
-      "refresh.kelpie-site.pages.dev",
-      "kelpie-site.pages.dev",
-      "kelpierobotics.com",
+    remotePatterns: [
+      { protocol: "https", hostname: "refresh.kelpie-site.pages.dev" },
+      { protocol: "https", hostname: "kelpie-site.pages.dev" },
+      { protocol: "https", hostname: "kelpierobotics.ca" },
     ],
     unoptimized: true,
   },
