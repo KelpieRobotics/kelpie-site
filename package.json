@@ -14,7 +14,7 @@
     "eslint": "^10.0.0",
     "eslint-config-next": "^0.2.4",
     "next": "^16.2.6",
-    "postcss": "^8.4.35",
+    "postcss": "^8.5.18",
     "prettier": "^3.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
