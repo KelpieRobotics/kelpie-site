@@ -11,6 +11,7 @@ const NAV_ITEMS = [
       { title: 'Our Team', url: '/team' },
       { title: 'Competition', url: '/competition' },
       { title: 'Gallery', url: '/gallery' },
+      { title: 'Hall of Fame', url: '/hall-of-fame'},
       { title: 'FAQ', url: '/faq'}
     ],
   },
@@ -142,8 +143,8 @@ function Navbar() {
         <div className="hidden md:flex items-center gap-4">
           <Link
             href="https://give.uottawa.ca/page/162055/donate/1?fund.id=EN328N"
-            className="px-5 py-2.5 rounded-full text-sm text-white transition-all hover:shadow-md hover:scale-105"
-            style={{ backgroundColor: '#00A99D', fontFamily: "Tetra-ITC"}}
+            className="px-5 py-2.5 rounded-full text-sm text-white transition-all hover:shadow-md hover:scale-105 font-tetra"
+            style={{ backgroundColor: '#00A99D'}}
             target='_blank'
           >
             Make a Donation
@@ -154,7 +155,7 @@ function Navbar() {
         {/* Mobile hamburger */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden p-2 rounded-lg text-gray-700 p-4"
+          className="md:hidden rounded-lg text-gray-700 p-[22px]"
           aria-label="Open menu"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -9,6 +9,7 @@ import Head from "next/head";
 
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 import * as BsIcons from "react-icons/bs";
+import { Jellyfish } from "@/components/SeaDecor";
 
 export default function TeamMembers() {
   const teamMembers = members.teamMembers;
@@ -102,7 +103,7 @@ export default function TeamMembers() {
         >
           <div className="flex gap-3">
             <IconImport name={team.icon} />
-            <h1 className="text-5xl text-white font-bold" style={{fontFamily: "Tetra-ITC"}}>{team.name}</h1>
+            <h1 className="text-5xl text-white font-bold font-tetra">{team.name}</h1>
           </div>
           {collapsed ? (
             <BsChevronDown className="w-6 h-6 text-white" />
@@ -243,7 +244,7 @@ export default function TeamMembers() {
         <div
           className={`relative flex flex-col items-center md:px-16 lg:px-24 pb-10`}
         >
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight" style={{fontFamily: "Tetra-ITC"}}>
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight font-tetra">
             Meet Our Team
           </h1>
           <p
@@ -256,7 +257,7 @@ export default function TeamMembers() {
       <div className="bg-white max-w-7xl mx-auto px-6 md:px-10 lg:px-8 py-12 flex flex-col gap-10">
         <div className="p-4">
           {/* Text */}
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 leading-tight" style={{fontFamily: "Tetra-ITC"}}>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 leading-tight font-tetra">
             About the Team
           </h2>
 
@@ -289,131 +290,12 @@ export default function TeamMembers() {
 
             {/* Decoration */}
             <div className="absolute" style={{top: "450px", right: "40px"}}>
-              <svg
-                className="opacity-15"
-                width="130"
-                height="200"
-                viewBox="0 0 130 200"
-                fill="none"
-              >
-                {/* Big jellyfish */}
-                <path
-                  d="M8 50 C8 18, 72 18, 72 50 C72 60, 40 64, 8 50Z"
-                  fill="#00A99D"
-                  opacity="0.4"
-                />
-                <path
-                  d="M14 46 C18 28, 62 28, 66 46"
-                  stroke="white"
-                  strokeWidth="1.2"
-                  fill="none"
-                  opacity="0.35"
-                />
-                <path
-                  d="M20 44 C23 32, 57 32, 60 44"
-                  stroke="white"
-                  strokeWidth="0.8"
-                  fill="none"
-                  opacity="0.25"
-                />
-                <path
-                  d="M18 62 C15 76, 20 86, 16 100 C13 112, 18 120, 14 134"
-                  stroke="#00A99D"
-                  strokeWidth="2"
-                  fill="none"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M28 64 C26 80, 32 90, 28 106 C24 120, 30 130, 26 146"
-                  stroke="#187A72"
-                  strokeWidth="1.8"
-                  fill="none"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M40 65 C40 82, 40 94, 40 110 C40 124, 40 134, 38 150"
-                  stroke="#00A99D"
-                  strokeWidth="2"
-                  fill="none"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M52 64 C54 80, 48 90, 52 106 C56 120, 50 130, 54 146"
-                  stroke="#187A72"
-                  strokeWidth="1.8"
-                  fill="none"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M62 62 C65 76, 60 86, 64 100 C67 112, 62 120, 66 134"
-                  stroke="#00A99D"
-                  strokeWidth="2"
-                  fill="none"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M12 63 C10 74, 14 80, 11 90"
-                  stroke="#187A72"
-                  strokeWidth="1"
-                  fill="none"
-                  strokeLinecap="round"
-                  opacity="0.5"
-                />
-                <path
-                  d="M68 63 C70 74, 66 80, 69 90"
-                  stroke="#00A99D"
-                  strokeWidth="1"
-                  fill="none"
-                  strokeLinecap="round"
-                  opacity="0.5"
-                />
-                {/* Small jellyfish */}
-                <path
-                  d="M86 30 C86 16, 122 16, 122 30 C122 36, 104 38, 86 30Z"
-                  fill="#187A72"
-                  opacity="0.35"
-                />
-                <path
-                  d="M90 28 C93 20, 118 20, 120 28"
-                  stroke="white"
-                  strokeWidth="0.8"
-                  fill="none"
-                  opacity="0.3"
-                />
-                <path
-                  d="M92 37 C90 46, 93 52, 91 60"
-                  stroke="#187A72"
-                  strokeWidth="1.5"
-                  fill="none"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M100 38 C99 48, 102 54, 100 64"
-                  stroke="#00A99D"
-                  strokeWidth="1.5"
-                  fill="none"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M108 38 C110 48, 106 54, 109 64"
-                  stroke="#187A72"
-                  strokeWidth="1.5"
-                  fill="none"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M116 37 C118 46, 115 52, 117 60"
-                  stroke="#00A99D"
-                  strokeWidth="1.5"
-                  fill="none"
-                  strokeLinecap="round"
-                />
-              </svg>
+              <Jellyfish className="opacity-15" />
             </div>
           </div>
 
           <div className="flex flex-column justify-between items-center ">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 mt-14 text-gray-900 leading-tight" style={{fontFamily: "Tetra-ITC"}}>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 mt-14 text-gray-900 leading-tight font-tetra">
               Kelpie's {selectedYear} Subteams
             </h1>
           </div>
@@ -459,7 +341,7 @@ export default function TeamMembers() {
           ))}
         </ul>
         <div className="p-4">
-          <h2 className="text-xl my-3 text-black font-bold" style={{fontFamily: "Tetra-ITC"}}>
+          <h2 className="text-xl my-3 text-black font-bold font-tetra">
             All {selectedYear} Team Members
           </h2>
           <ul className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
