@@ -236,7 +236,8 @@ function Navbar() {
             {/* Bottom: CTA */}
             <div className="px-6 py-8 border-t border-gray-100">
               <Link
-                href="/contact-us"
+                href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=sdof1BV-_Uy1-nIA5U3rax6G2TQDhZhNtWML1bg29_tUMlFZVkc0RU45Rlk3UlBTUFA3RUFMVEswTyQlQCN0PWcu"
+                target="_blank"
                 onClick={() => setMenuOpen(false)}
                 className="w-full text-center px-6 py-3.5 rounded-full font-semibold text-white text-base transition-all hover:shadow-md block"
                 style={{ backgroundColor: '#00A99D' }}

@@ -51,9 +51,7 @@ function HomePage() {
             University of Ottawa's student-led underwater robotics team,
             competing on the world stage since 2022.
           </p>
-          <div
-            className={`flex flex-col sm:flex-row gap-4 transition-all duration-700 delay-200' : 'opacity-0 translate-y-4'}`}
-          >
+          <div className="flex flex-col sm:flex-row gap-4 mb-6">
             <Link
               href="/team"
               className="px-8 py-3 rounded-full font-semibold text-white transition-all hover:shadow-lg hover:scale-105"
@@ -66,6 +64,17 @@ function HomePage() {
               className="px-8 py-3 rounded-full font-semibold text-white border-2 border-white/60 hover:bg-white/10 hover:border-white transition-all"
             >
               Get in Touch
+            </Link>
+          </div>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <span className="text-white/80 text-base font-medium">Now recruiting for MATE ROV 2026/2027</span>
+            <Link
+              href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=sdof1BV-_Uy1-nIA5U3rax6G2TQDhZhNtWML1bg29_tUMlFZVkc0RU45Rlk3UlBTUFA3RUFMVEswTyQlQCN0PWcu"
+              target="_blank"
+              className="px-8 py-3 rounded-full font-semibold text-white transition-all hover:shadow-lg hover:scale-105 whitespace-nowrap"
+              style={{ backgroundColor: "#00A99D" }}
+            >
+              Join Us
             </Link>
           </div>
         </div>
@@ -429,7 +438,7 @@ function HomePage() {
               </p>
               <div>
                 <Link
-                  href="https://forms.gle/yJ7TaBth74qjybqz8"
+                  href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=sdof1BV-_Uy1-nIA5U3rax6G2TQDhZhNtWML1bg29_tUMlFZVkc0RU45Rlk3UlBTUFA3RUFMVEswTyQlQCN0PWcu"
                   target="_blank"
                   className="inline-block px-8 py-3 rounded-full font-semibold text-white transition-all hover:shadow-lg hover:scale-105"
                   style={{ backgroundColor: "#187A72" }}
