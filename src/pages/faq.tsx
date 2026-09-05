@@ -301,7 +301,7 @@ export default function Competition() {
           <br/>
           <br></br>
 
-          <a href="https://forms.gle/yJ7TaBth74qjybqz8" className="text-white bg-teal-600 
+          <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=sdof1BV-_Uy1-nIA5U3rax6G2TQDhZhNtWML1bg29_tUMlFZVkc0RU45Rlk3UlBTUFA3RUFMVEswTyQlQCN0PWcu" className="text-white bg-teal-600
           box-border border border-transparent hover:bg-teal-700 focus:ring-4 focus:ring-teal-400 
           shadow-xs text-xl font-bold leading-5 rounded-xl text-sm px-4 py-3 focus:outline-none font-tetra" target="_blank">Sign Up Today</a>
 
