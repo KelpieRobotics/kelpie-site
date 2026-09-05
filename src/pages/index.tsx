@@ -66,14 +66,17 @@ function HomePage() {
               Get in Touch
             </Link>
           </div>
-          <Link
-            href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=sdof1BV-_Uy1-nIA5U3rax6G2TQDhZhNtWML1bg29_tUMlFZVkc0RU45Rlk3UlBTUFA3RUFMVEswTyQlQCN0PWcu"
-            target="_blank"
-            className="inline-flex items-center gap-3 transition-all group"
-          >
-            <span className="text-white/80 text-lg font-medium">Now recruiting for MATE ROV 2026/2027</span>
-            <span className="text-lg font-semibold underline underline-offset-2 transition-colors group-hover:text-teal-300" style={{ color: "#00A99D" }}>Join Us &rarr;</span>
-          </Link>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <span className="text-white/80 text-base font-medium">Now recruiting for MATE ROV 2026/2027</span>
+            <Link
+              href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=sdof1BV-_Uy1-nIA5U3rax6G2TQDhZhNtWML1bg29_tUMlFZVkc0RU45Rlk3UlBTUFA3RUFMVEswTyQlQCN0PWcu"
+              target="_blank"
+              className="px-8 py-3 rounded-full font-semibold text-white transition-all hover:shadow-lg hover:scale-105 whitespace-nowrap"
+              style={{ backgroundColor: "#00A99D" }}
+            >
+              Join Us
+            </Link>
+          </div>
         </div>
 
         {/* Scroll indicator */}
