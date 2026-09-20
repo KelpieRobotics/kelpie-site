@@ -66,7 +66,7 @@ function HomePage() {
               Get in Touch
             </Link>
           </div>
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          {/* <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
             <span className="text-white/80 text-base font-medium">Now recruiting for MATE ROV 2026/2027</span>
             <Link
               href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=sdof1BV-_Uy1-nIA5U3rax6G2TQDhZhNtWML1bg29_tUMlFZVkc0RU45Rlk3UlBTUFA3RUFMVEswTyQlQCN0PWcu"
@@ -76,7 +76,7 @@ function HomePage() {
             >
               Join Us
             </Link>
-          </div>
+          </div> */}
         </div>
 
         {/* Scroll indicator */}
